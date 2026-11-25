@@ -8,11 +8,13 @@
     <meta name="keywords" content="Elton Gremi, Specialist IT Shqipëri, Siguri Kibernetike, Administrim Sistemesh dhe Rrjetesh, Linux Windows Server, Cisco, Cloud DevOps Docker Kubernetes, IT Systems Administrator, Fier, Shqipëri">
     <meta name="author" content="Elton Gremi">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://eltongremi.github.io/">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' data: https:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:;">
 
     <!-- Open Graph / Social SEO -->
     <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://eltongremi.github.io/">
     <meta property="og:locale" content="sq_AL">
     <meta property="og:locale:alternate" content="it_IT">
     <meta property="og:locale:alternate" content="en_US">
@@ -28,6 +30,7 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Elton Gremi",
+      "url": "https://eltongremi.github.io/",
       "jobTitle": "Specialist IT & Siguri Kibernetike | IT Systems Administrator",
       "description": "Specialist IT me mbi 17 vjet përvojë në administrimin e infrastrukturave IT, serverëve Windows dhe Linux, rrjeteve Cisco, sigurisë kibernetike, Cloud dhe automatizimit DevOps.",
       "address": {
@@ -744,39 +747,19 @@
     <!-- ==================== PROJEKTET PERSONALE & LABORATORËT ==================== -->
     <section id="projektet" class="py-20 bg-white dark:bg-slate-900/50 border-b border-slate-200 dark:border-slate-800/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-                <div>
-                    <span data-i18n="sec5_tag" class="font-mono text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">// 05. Portofoli Teknik & R&D</span>
-                    <h2 data-i18n="sec5_title" class="mt-2 text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">
-                        Projekte Personale & Laboratorë Teknikë
-                    </h2>
-                    <p data-i18n="sec5_desc" class="mt-2 text-slate-600 dark:text-slate-400 max-w-2xl">
-                        Arkitektura me disponueshmëri të lartë, sisteme të automatizuara për monitorimin e sigurisë dhe prototipe softuerike të zhvilluara për optimizimin e operacioneve IT.
-                    </p>
-                </div>
-
-                <!-- Butoni Shto / Personalizo Projekte -->
-                <div class="flex items-center gap-3 no-print">
-                    <button onclick="openProjectModal()" data-i18n="btn_add_proj" class="px-4 py-2.5 rounded-xl bg-slate-900 dark:bg-slate-800 hover:bg-emerald-600 dark:hover:bg-emerald-600 text-white text-xs sm:text-sm font-semibold border border-slate-700 transition-all flex items-center gap-2 shadow-sm">
-                        <i class="fas fa-plus"></i> Shto / Personalizo Projekte
-                    </button>
-                </div>
+            <div class="mb-12">
+                <span data-i18n="sec5_tag" class="font-mono text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">// 05. Portofoli Teknik & R&D</span>
+                <h2 data-i18n="sec5_title" class="mt-2 text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">
+                    Projekte Personale & Laboratorë Teknikë
+                </h2>
+                <p data-i18n="sec5_desc" class="mt-2 text-slate-600 dark:text-slate-400 max-w-2xl">
+                    Arkitektura me disponueshmëri të lartë, sisteme të automatizuara për monitorimin e sigurisë dhe prototipe softuerike të zhvilluara për optimizimin e operacioneve IT.
+                </p>
             </div>
 
-            <!-- Rrjeta e Projekteve -->
+            <!-- Rrjeta e Projekteve (Vetëm lexim / Read-Only për vizitorët) -->
             <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Popullohet dinamikisht nga JS -->
-            </div>
-
-            <!-- Shënim informues për personalizim -->
-            <div class="mt-8 p-4 rounded-xl bg-slate-100 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-xs text-slate-600 dark:text-slate-400 no-print">
-                <div class="flex items-center gap-2.5">
-                    <i class="fas fa-info-circle text-emerald-500 text-base"></i>
-                    <span data-i18n="proj_note"><strong>Seksion i Personalizueshëm:</strong> Mund të modifikoni titujt, përshkrimet, teknologjitë ose të shtoni projektet tuaja personale duke klikuar ikonën e redaktimit në çdo kartë.</span>
-                </div>
-                <button onclick="resetDefaultProjects()" data-i18n="btn_reset_proj" class="text-slate-500 hover:text-rose-500 underline whitespace-nowrap">
-                    Rikthe projektet fillestare
-                </button>
+                <!-- Popullohet nga PROJECTS_DATA në JavaScript -->
             </div>
         </div>
     </section>
@@ -993,64 +976,30 @@
         </div>
     </div>
 
-    <!-- ==================== MODAL SHTO / MODIFIKO PROJEKT ==================== -->
-    <div id="project-modal" class="fixed inset-0 z-50 hidden bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4 no-print">
-        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl">
-            <div class="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800">
-                <h3 id="project-modal-title" data-i18n="modal_proj_new" class="text-xl font-bold text-slate-900 dark:text-white">Projekt i Ri Personal</h3>
-                <button onclick="closeProjectModal()" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-900 dark:hover:text-white">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-
-            <form id="project-form" class="mt-5 space-y-4">
-                <input type="hidden" id="project-edit-index" value="-1">
-                
-                <div>
-                    <label data-i18n="mproj_cat" class="block text-xs font-mono uppercase text-slate-500 mb-1">Kategoria / Etiketa</label>
-                    <input type="text" id="proj-category" required maxlength="50" placeholder="P.sh. Siguri Kibernetike & Automatizim" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white text-sm">
-                </div>
-
-                <div>
-                    <label data-i18n="mproj_title" class="block text-xs font-mono uppercase text-slate-500 mb-1">Titulli i Projektit</label>
-                    <input type="text" id="proj-title" required maxlength="100" placeholder="P.sh. Sistem i Automatizuar Monitorimi" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white text-sm">
-                </div>
-
-                <div>
-                    <label data-i18n="mproj_desc" class="block text-xs font-mono uppercase text-slate-500 mb-1">Përshkrimi Teknik</label>
-                    <textarea id="proj-desc" rows="3" required maxlength="600" placeholder="Përshkruani arkitekturën, objektivat dhe rezultatet..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white text-sm"></textarea>
-                </div>
-
-                <div>
-                    <label data-i18n="mproj_tags" class="block text-xs font-mono uppercase text-slate-500 mb-1">Teknologjitë (të ndara me presje)</label>
-                    <input type="text" id="proj-tags" required maxlength="160" placeholder="P.sh. Python, Bash, Linux, Docker, Kubernetes" class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white text-sm">
-                </div>
-
-                <div>
-                    <label data-i18n="mproj_link" class="block text-xs font-mono uppercase text-slate-500 mb-1">Link Repository / Demo (opsional)</label>
-                    <input type="url" id="proj-link" maxlength="200" placeholder="https://github.com/..." class="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white text-sm">
-                </div>
-
-                <div class="pt-3 flex justify-end gap-3">
-                    <button type="button" onclick="closeProjectModal()" data-i18n="btn_cancel" class="px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-medium">Anulo</button>
-                    <button type="submit" data-i18n="btn_save" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-semibold">Ruaj Projektin</button>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <!-- ==================== MODAL DETAJET E PROJEKTIT ==================== -->
+    <!-- ==================== MODAL DETAJET E PROJEKTIT (READ-ONLY) ==================== -->
     <div id="project-detail-modal" class="fixed inset-0 z-50 hidden bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4 no-print">
-        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl">
             <div class="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800">
                 <span id="pdet-cat" class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-mono text-xs font-semibold"></span>
-                <button onclick="closeProjectDetailModal()" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-900 dark:hover:text-white">
+                <button onclick="closeProjectDetailModal()" aria-label="Mbyll" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-900 dark:hover:text-white">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
             <div class="py-5 space-y-4">
                 <h3 id="pdet-title" class="text-2xl font-bold text-slate-900 dark:text-white"></h3>
                 <p id="pdet-desc" class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                    <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                        <div data-i18n="pdet_challenge_lbl" class="text-xs font-mono uppercase text-amber-600 dark:text-amber-400 mb-1">Sfida Teknike</div>
+                        <p id="pdet-challenge" class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                        <div data-i18n="pdet_solution_lbl" class="text-xs font-mono uppercase text-emerald-600 dark:text-emerald-400 mb-1">Arkitektura & Zgjidhja</div>
+                        <p id="pdet-solution" class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+                    </div>
+                </div>
+
                 <div class="pt-2">
                     <div data-i18n="pdet_tech_lbl" class="text-xs font-mono uppercase text-slate-500 mb-2">Teknologjitë e përdorura:</div>
                     <div id="pdet-tags" class="flex flex-wrap gap-2"></div>
@@ -1254,9 +1203,6 @@
                 sec5_tag: "// 05. Portofoli Teknik & R&D",
                 sec5_title: "Projekte Personale & Laboratorë Teknikë",
                 sec5_desc: "Arkitektura me disponueshmëri të lartë, sisteme të automatizuara për monitorimin e sigurisë dhe prototipe softuerike të zhvilluara për optimizimin e operacioneve IT.",
-                btn_add_proj: "Shto / Personalizo Projekte",
-                proj_note: "<strong>Seksion i Personalizueshëm:</strong> Mund të modifikoni titujt, përshkrimet, teknologjitë ose të shtoni projektet tuaja personale duke klikuar ikonën e redaktimit në çdo kartë.",
-                btn_reset_proj: "Rikthe projektet fillestare",
                 sec6_tag: "// 06. Kontakt i Drejtpërdrejtë",
                 sec6_title: "Le të lidhemi",
                 sec6_desc: "I disponueshëm për mundësi profesionale si Specialist IT, Administrim Sistemesh & Rrjetesh, Siguri Kibernetike, Cloud/DevOps ose konsulencë teknike.",
@@ -1287,34 +1233,22 @@
                 modal_cv_lang_t: "Gjuhët & Informacione",
                 btn_close: "Mbyll",
                 btn_print: "Printo / Ruaj si PDF",
-                modal_proj_new: "Projekt i Ri Personal",
-                modal_proj_edit: "Modifiko Projektin",
-                mproj_cat: "Kategoria / Etiketa",
-                mproj_title: "Titulli i Projektit",
-                mproj_desc: "Përshkrimi Teknik",
-                mproj_tags: "Teknologjitë (të ndara me presje)",
-                mproj_link: "Link Repository / Demo (opsional)",
-                btn_cancel: "Anulo",
-                btn_save: "Ruaj Projektin",
+                pdet_challenge_lbl: "Sfida Teknike",
+                pdet_solution_lbl: "Arkitektura & Zgjidhja",
                 pdet_tech_lbl: "Teknologjitë e përdorura:",
-                proj_details_btn: "Detajet teknike",
+                proj_details_btn: "Detajet Teknike",
                 proj_private_lbl: "Laborator Privat / Mjedis i Brendshëm",
                 proj_repo_lbl: "Hap Repository / Demo",
                 toasts: {
                     email_copied: "Email-i u kopjua në clipboard!",
                     phone_copied: "Numri i telefonit u kopjua!",
-                    proj_saved: "Projekti u ruajt me sukses!",
-                    proj_updated: "Projekti u përditësua!",
-                    proj_deleted: "Projekti u fshi.",
-                    proj_reset: "Projektet fillestare u rikthyen.",
                     msg_sent: "Verifikimi u krye! Mesazhi u përgatit për Elton Gremi.",
                     err_too_fast: "Dërgim shumë i shpejtë. Ju lutem prisni disa sekonda.",
                     err_rate_limit: "Keni arritur kufirin e dërgimeve (maks. 2 mesazhe çdo 10 minuta).",
                     err_fields: "Plotësoni saktë emrin, email-in dhe mesazhin (min. 10 karaktere).",
                     err_spam_links: "Mesazhi u bllokua nga filtri anti-spam (shumë linqe ose përmbajtje e dyshimtë).",
                     err_captcha: "Përgjigjja e verifikimit matematikor nuk është e saktë.",
-                    err_gdpr: "Duhet të pranoni autorizimin GDPR përpara dërgimit.",
-                    err_url: "URL-ja e projektit duhet të fillojë me http:// ose https://"
+                    err_gdpr: "Duhet të pranoni autorizimin GDPR përpara dërgimit."
                 }
             },
             it: {
@@ -1403,10 +1337,7 @@
                 add_info_3: "<strong>Formazione continua</strong> su nuove tecnologie",
                 sec5_tag: "// 05. Portfolio Tecnico & R&D",
                 sec5_title: "Progetti Personali & Laboratori Tecnici",
-                sec5_desc: "Architetture ad alta affidabilità, sistemi automatizzati di monitoraggio sicurezza e prototipi software.",
-                btn_add_proj: "Aggiungi / Personalizza Progetti",
-                proj_note: "<strong>Sezione Personalizzabile:</strong> Puoi modificare titoli, descrizioni, tecnologie o aggiungere i tuoi progetti cliccando sull'icona di modifica.",
-                btn_reset_proj: "Ripristina predefiniti",
+                sec5_desc: "Architetture ad alta affidabilità, sistemi automatizzati di monitoraggio sicurezza e prototipi software sviluppati per ottimizzare le operazioni IT.",
                 sec6_tag: "// 06. Contatto Diretto",
                 sec6_title: "Mettiamoci in contatto",
                 sec6_desc: "Disponibile per opportunità professionali come Specialista IT, SysAdmin, Sicurezza Informatica, Cloud/DevOps o consulenza.",
@@ -1437,34 +1368,22 @@
                 modal_cv_lang_t: "Lingue & Informazioni",
                 btn_close: "Chiudi",
                 btn_print: "Stampa / Salva come PDF",
-                modal_proj_new: "Nuovo Progetto Personale",
-                modal_proj_edit: "Modifica Progetto",
-                mproj_cat: "Categoria / Tag",
-                mproj_title: "Titolo del Progetto",
-                mproj_desc: "Descrizione Tecnica",
-                mproj_tags: "Tecnologie (separate da virgola)",
-                mproj_link: "Link Repository / Demo (opzionale)",
-                btn_cancel: "Anulo",
-                btn_save: "Salva Progetto",
+                pdet_challenge_lbl: "Sfida Tecnica",
+                pdet_solution_lbl: "Architettura & Soluzione",
                 pdet_tech_lbl: "Tecnologie utilizzate:",
-                proj_details_btn: "Dettagli tecnici",
+                proj_details_btn: "Dettagli Tecnici",
                 proj_private_lbl: "Laboratorio Privato / Ambiente Interno",
                 proj_repo_lbl: "Apri Repository / Demo",
                 toasts: {
                     email_copied: "Email copiata!",
                     phone_copied: "Numero copiato!",
-                    proj_saved: "Progetto salvato!",
-                    proj_updated: "Progetto aggiornato!",
-                    proj_deleted: "Progetto rimosso.",
-                    proj_reset: "Progetti ripristinati.",
                     msg_sent: "Verifica superata! Messaggio preparato per Elton Gremi.",
                     err_too_fast: "Invio troppo rapido. Attendi qualche secondo.",
                     err_rate_limit: "Limite di invii raggiunto (max 2 messaggi ogni 10 minuti).",
                     err_fields: "Compila correttamente nome, email e messaggio (min. 10 caratteri).",
                     err_spam_links: "Messaggio bloccato dal filtro anti-spam (troppi link o contenuto sospetto).",
                     err_captcha: "La risposta alla verifica matematica non è corretta.",
-                    err_gdpr: "Devi accettare l'informativa GDPR prima dell'invio.",
-                    err_url: "L'URL del progetto deve iniziare con http:// o https://"
+                    err_gdpr: "Devi accettare l'informativa GDPR prima dell'invio."
                 }
             },
             en: {
@@ -1554,9 +1473,6 @@
                 sec5_tag: "// 05. Technical Portfolio & R&D",
                 sec5_title: "Personal Projects & Technical Labs",
                 sec5_desc: "High-availability architectures, automated security monitoring systems, and software prototypes built to streamline IT operations.",
-                btn_add_proj: "Add / Customize Projects",
-                proj_note: "<strong>Customizable Section:</strong> Edit titles, descriptions, technologies, or add your own personal projects by clicking the edit icon on any card.",
-                btn_reset_proj: "Reset default projects",
                 sec6_tag: "// 06. Direct Contact",
                 sec6_title: "Get in Touch",
                 sec6_desc: "Available for opportunities as IT Specialist, Systems & Network Administrator, Cybersecurity Specialist, Cloud/DevOps Engineer, or technical consultant.",
@@ -1587,34 +1503,22 @@
                 modal_cv_lang_t: "Languages & Info",
                 btn_close: "Close",
                 btn_print: "Print / Save as PDF",
-                modal_proj_new: "New Personal Project",
-                modal_proj_edit: "Edit Project",
-                mproj_cat: "Category / Tag",
-                mproj_title: "Project Title",
-                mproj_desc: "Technical Description",
-                mproj_tags: "Technologies (comma-separated)",
-                mproj_link: "Repository / Demo Link (optional)",
-                btn_cancel: "Cancel",
-                btn_save: "Save Project",
+                pdet_challenge_lbl: "Technical Challenge",
+                pdet_solution_lbl: "Architecture & Solution",
                 pdet_tech_lbl: "Technologies used:",
-                proj_details_btn: "Technical details",
+                proj_details_btn: "Technical Details",
                 proj_private_lbl: "Private Lab / Internal Environment",
                 proj_repo_lbl: "Open Repository / Demo",
                 toasts: {
                     email_copied: "Email copied!",
                     phone_copied: "Phone number copied!",
-                    proj_saved: "Project saved!",
-                    proj_updated: "Project updated!",
-                    proj_deleted: "Project removed.",
-                    proj_reset: "Default projects restored.",
                     msg_sent: "Security check passed! Message prepared for Elton Gremi.",
                     err_too_fast: "Submitted too quickly. Please wait a few seconds.",
                     err_rate_limit: "Submission limit reached (max 2 messages every 10 minutes).",
                     err_fields: "Please fill in valid name, email, and message (min. 10 characters).",
                     err_spam_links: "Message blocked by anti-spam filter (too many links or suspicious tags).",
                     err_captcha: "Incorrect math verification answer.",
-                    err_gdpr: "Please accept the GDPR consent before sending.",
-                    err_url: "Project URL must start with http:// or https://"
+                    err_gdpr: "Please accept the GDPR consent before sending."
                 }
             }
         };
@@ -1791,32 +1695,100 @@
             ]
         };
 
-        // Projektet fillestare në Shqip
-        const defaultProjectsSq = [
-            {
-                category: "Cloud & DevOps",
-                title: "Arkitekturë High-Availability & Mikroservise në Kubernetes/Docker",
-                desc: "Implementim i një infrastrukture të ridondancuar me kontejnerë Docker dhe orkestrim Kubernetes, me balancim ngarkese, reverse proxy të sigurt dhe pipeline CI/CD të automatizuar me Git për dorëzim të vazhdueshëm.",
-                tags: ["Kubernetes", "Docker", "CI/CD", "Git", "Linux", "Ridondancë"],
-                link: ""
-            },
-            {
-                category: "Siguri Kibernetike & Automatizim",
-                title: "Sistem i Automatizuar për Monitorimin e Sigurisë dhe Reagimin ndaj Incidenteve",
-                desc: "Set script-esh dhe veglash diagnostikuese në Bash, PowerShell dhe Python për auditimin e serverëve, verifikimin e konfigurimeve DNS/Firewall, analizën e anomalive në kohë reale dhe backup-et e enkriptuara.",
-                tags: ["Bash", "Python", "PowerShell", "Siguri Kibernetike", "Backup/Restore"],
-                link: ""
-            },
-            {
-                category: "Zhvillim Softuerik & Prototipe",
-                title: "Platformë Web & Mobile për Menaxhim Operativ dhe Raportim Teknik",
-                desc: "Zhvillim i një aplikacioni ndër-platformë dhe paneli web për monitorimin e statusit të shërbimeve të rrjetit, dokumentimin e ndërhyrjeve teknike dhe gjenerimin e raporteve periodike.",
-                tags: ["React", "Flutter", "Go", "JavaScript", "REST API"],
-                link: ""
-            }
-        ];
-
-        let projects = JSON.parse(localStorage.getItem('elton_projects_sq')) || [...defaultProjectsSq];
+        /* =========================================================================
+           PROJEKTET PERSONALE (READ-ONLY PËR VIZITORËT)
+           Për të shtuar ose modifikuar një projekt, redaktoni direkt këtë listë
+           këtu në index.html dhe bëni git push në GitHub (eltongremi.github.io).
+           ========================================================================= */
+        const PROJECTS_DATA = {
+            sq: [
+                {
+                    category: "Automatizim & Vazhdimësi Operative",
+                    title: "Automatizim Backup & Disaster Recovery Linux/Windows me Bash, PowerShell & Python",
+                    desc: "Kornizë e automatizuar për kopje rezervë të enkriptuara, verifikim të integritetit të të dhënave dhe restaurim të shpejtë në mjedise hibride Windows Server dhe Linux.",
+                    challenge: "Eliminimi i ndërhyrjeve manuale në backup-et ditore dhe garantimi i kohës minimale të rikuperimit (RTO/RPO) për shërbimet kritike Active Directory, DNS dhe databazat.",
+                    solution: "Skripte të planifikuara në Bash dhe PowerShell të koordinuara me Python për sinkronizim inkremental, enkriptim AES-256, test automatik të restaurimit dhe njoftime teknike.",
+                    tags: ["Bash", "PowerShell", "Python", "Linux", "Windows Server", "Backup/Restore"],
+                    link: "" // Opsional: vendosni linkun e repository GitHub p.sh. "https://github.com/eltongremi/..."
+                },
+                {
+                    category: "Cloud & DevOps",
+                    title: "Infrastrukturë Mikroservisesh me Lartësi Disponueshmërie në Docker & Kubernetes",
+                    desc: "Arkitekturë kontejnerësh me ridondancë shërbimesh, balancim ngarkese dhe pipeline CI/CD të integruara me Git për shpërndarje të vazhdueshme dhe pa ndërprerje.",
+                    challenge: "Sigurimi i shkallëzueshmërisë dhe vazhdimësisë operative të aplikacioneve të brendshme gjatë përditësimeve të shpeshta.",
+                    solution: "Orkestrim në Kubernetes me shërbime të kontejnerizuara në Docker, kontrolle shëndeti (health checks), rifillim automatik (rolling updates) dhe konfigurime të versionuara në Git.",
+                    tags: ["Docker", "Kubernetes", "Git", "CI/CD", "Cloud", "Ridondancë"],
+                    link: ""
+                },
+                {
+                    category: "Siguri Kibernetike & Monitorim",
+                    title: "Sistem Monitorimi & Përgjigje Proaktive ndaj Incidenteve të Sigurisë",
+                    desc: "Platformë dhe mjete diagnostikuese për monitorimin në kohë reale të serverëve, firewall-eve, trafikut VPN dhe gjenerimin e raporteve periodike të auditimit.",
+                    challenge: "Zbulimi i hershëm i anomalive të rrjetit, tentativave të paautorizuara të aksesit dhe ruajtja e gjurmueshmërisë në përputhje me standardet GDPR.",
+                    solution: "Analizë e automatizuar e regjistrave (logs) në Linux/Windows me Go dhe Python, alarme në kohë reale dhe dokumentim i strukturuar i çdo ndërhyrjeje operative.",
+                    tags: ["Siguri Kibernetike", "Go", "Python", "Firewall & VPN", "Monitorim", "GDPR"],
+                    link: ""
+                }
+            ],
+            it: [
+                {
+                    category: "Automazione & Continuità Operativa",
+                    title: "Automazione Backup & Disaster Recovery Linux/Windows con Bash, PowerShell & Python",
+                    desc: "Framework automatizzato per backup cifrati, verifica dell'integrità dei dati e ripristino rapido su infrastrutture ibride Windows Server e Linux.",
+                    challenge: "Eliminare le attività manuali nei backup giornalieri e garantire tempi minimi di ripristino (RTO/RPO) per servizi critici Active Directory, DNS e database.",
+                    solution: "Script schedulati in Bash e PowerShell orchestrati con Python per sincronizzazione incrementale, cifratura, test automatico di restore e reportistica tecnica.",
+                    tags: ["Bash", "PowerShell", "Python", "Linux", "Windows Server", "Backup/Restore"],
+                    link: ""
+                },
+                {
+                    category: "Cloud & DevOps",
+                    title: "Infrastruttura a Microservizi ad Alta Disponibilità su Docker & Kubernetes",
+                    desc: "Architettura containerizzata con ridondanza dei servizi, load balancing e pipeline CI/CD integrate con Git per rilasci continui senza downtime.",
+                    challenge: "Garantire scalabilità e continuità operativa delle applicazioni interne durante gli aggiornamenti frequenti.",
+                    solution: "Orchestrazione su Kubernetes con container Docker, health check automatici, rolling update e configurazioni versionate su Git.",
+                    tags: ["Docker", "Kubernetes", "Git", "CI/CD", "Cloud", "Ridondanza"],
+                    link: ""
+                },
+                {
+                    category: "Sicurezza Informatica & Monitoraggio",
+                    title: "Sistema di Monitoraggio & Risposta Proattiva agli Incidenti di Sicurezza",
+                    desc: "Strumenti diagnostici per il monitoraggio in tempo reale di server, firewall, tunnel VPN e generazione di report periodici di audit.",
+                    challenge: "Rilevare tempestivamente anomalie di rete e accessi non autorizzati mantenendo la tracciabilità conforme al GDPR.",
+                    solution: "Analisi automatizzata dei log di sistema con Go e Python, alerting proattivo e documentazione strutturata di ogni intervento operativo.",
+                    tags: ["Cybersecurity", "Go", "Python", "Firewall & VPN", "Monitoraggio", "GDPR"],
+                    link: ""
+                }
+            ],
+            en: [
+                {
+                    category: "Automation & Business Continuity",
+                    title: "Linux/Windows Backup & Disaster Recovery Automation with Bash, PowerShell & Python",
+                    desc: "Automated framework for encrypted backups, data integrity verification, and rapid recovery across hybrid Windows Server and Linux environments.",
+                    challenge: "Eliminate manual overhead in daily backups while ensuring minimal RTO/RPO for critical Active Directory, DNS, and database services.",
+                    solution: "Scheduled Bash and PowerShell scripts coordinated via Python for incremental sync, encryption, automated restore testing, and technical reporting.",
+                    tags: ["Bash", "PowerShell", "Python", "Linux", "Windows Server", "Backup/Restore"],
+                    link: ""
+                },
+                {
+                    category: "Cloud & DevOps",
+                    title: "High-Availability Microservices Infrastructure on Docker & Kubernetes",
+                    desc: "Containerized architecture featuring service redundancy, load balancing, and Git-integrated CI/CD pipelines for zero-downtime deployments.",
+                    challenge: "Ensure scalability and continuous availability of internal services during frequent software releases.",
+                    solution: "Kubernetes orchestration with Docker containers, automated health checks, rolling updates, and Git-versioned infrastructure configs.",
+                    tags: ["Docker", "Kubernetes", "Git", "CI/CD", "Cloud", "Redundancy"],
+                    link: ""
+                },
+                {
+                    category: "Cybersecurity & Monitoring",
+                    title: "Proactive Security Monitoring & Incident Response System",
+                    desc: "Diagnostic utilities for real-time monitoring of servers, firewalls, and VPN tunnels with automated compliance audit reporting.",
+                    challenge: "Early detection of network anomalies and unauthorized access attempts while maintaining GDPR-compliant audit trails.",
+                    solution: "Automated log correlation using Go and Python, real-time alerting, and structured incident intervention reporting.",
+                    tags: ["Cybersecurity", "Go", "Python", "Firewall & VPN", "Monitoring", "GDPR"],
+                    link: ""
+                }
+            ]
+        };
 
         function getToastMsg(key) {
             return i18n[currentLang].toasts[key] || "";
@@ -1951,11 +1923,12 @@
             `;
         }
 
-        // 5. Renderimi dhe Menaxhimi i Projekteve (me Escaping strikt anti-XSS)
+        // 5. Renderimi i Projekteve (Vetëm Lexim / Read-Only me Escaping strikt anti-XSS)
         function renderProjects() {
             const dict = i18n[currentLang];
+            const currentProjects = PROJECTS_DATA[currentLang] || PROJECTS_DATA.sq;
             const grid = document.getElementById('projects-grid');
-            grid.innerHTML = projects.map((proj, idx) => {
+            grid.innerHTML = currentProjects.map((proj, idx) => {
                 const safeCat = escapeHTML(proj.category);
                 const safeTitle = escapeHTML(proj.title);
                 const safeDesc = escapeHTML(proj.desc);
@@ -1967,23 +1940,15 @@
                 `).join('');
 
                 return `
-                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50 transition-all flex flex-col justify-between group">
+                <article class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50 transition-all flex flex-col justify-between group">
                     <div>
                         <div class="flex items-center justify-between gap-2 mb-4">
                             <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-mono text-xs font-semibold">
                                 ${safeCat}
                             </span>
-                            <div class="flex items-center gap-1 no-print">
-                                <button onclick="openProjectDetail(${idx})" aria-label="Detaje" class="p-1.5 rounded-lg text-slate-400 hover:text-cyan-500 hover:bg-slate-200/50 dark:hover:bg-slate-800 transition-colors" title="${escapeHTML(dict.proj_details_btn)}">
-                                    <i class="fas fa-expand-alt text-xs"></i>
-                                </button>
-                                <button onclick="editProject(${idx})" aria-label="Modifiko" class="p-1.5 rounded-lg text-slate-400 hover:text-emerald-500 hover:bg-slate-200/50 dark:hover:bg-slate-800 transition-colors" title="Modifiko">
-                                    <i class="fas fa-edit text-xs"></i>
-                                </button>
-                                <button onclick="deleteProject(${idx})" aria-label="Fshi" class="p-1.5 rounded-lg text-slate-400 hover:text-rose-500 hover:bg-slate-200/50 dark:hover:bg-slate-800 transition-colors" title="Fshi">
-                                    <i class="fas fa-trash text-xs"></i>
-                                </button>
-                            </div>
+                            <button onclick="openProjectDetail(${idx})" aria-label="${escapeHTML(dict.proj_details_btn)}" class="p-1.5 rounded-lg text-slate-400 hover:text-cyan-500 hover:bg-slate-200/50 dark:hover:bg-slate-800 transition-colors no-print" title="${escapeHTML(dict.proj_details_btn)}">
+                                <i class="fas fa-expand-alt text-xs"></i>
+                            </button>
                         </div>
                         <h3 onclick="openProjectDetail(${idx})" class="cursor-pointer text-lg font-bold text-slate-900 dark:text-white mb-2.5 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
                             ${safeTitle}
@@ -1997,7 +1962,7 @@
                         <div class="flex flex-wrap gap-1.5 mb-4">
                             ${safeTagsHtml}
                         </div>
-                        <div class="flex items-center justify-between pt-2 border-t border-slate-200/70 dark:border-slate-800/70">
+                        <div class="flex items-center justify-between pt-3 border-t border-slate-200/70 dark:border-slate-800/70">
                             ${safeLink ? `
                                 <a href="${escapeHTML(safeLink)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono font-semibold text-emerald-600 dark:text-emerald-400 hover:underline">
                                     <i class="fab fa-github"></i> ${escapeHTML(dict.proj_repo_lbl)} <i class="fas fa-external-link-alt text-[10px]"></i>
@@ -2007,24 +1972,28 @@
                                     <i class="fas fa-lock text-[10px]"></i> ${escapeHTML(dict.proj_private_lbl)}
                                 </span>
                             `}
-                            <button onclick="openProjectDetail(${idx})" class="text-xs font-mono text-cyan-600 dark:text-cyan-400 hover:underline no-print">
+                            <button onclick="openProjectDetail(${idx})" class="text-xs font-mono font-semibold text-cyan-600 dark:text-cyan-400 hover:underline no-print">
                                 ${escapeHTML(dict.proj_details_btn)} →
                             </button>
                         </div>
                     </div>
-                </div>
+                </article>
             `}).join('');
         }
 
-        // Modal Detajet e Projektit (me përdorim të sigurt textContent / escaping)
+        // Modal Detajet e Projektit (Read-Only me përdorim të sigurt textContent / escaping)
         const pDetModal = document.getElementById('project-detail-modal');
         function openProjectDetail(idx) {
-            const p = projects[idx];
+            const currentProjects = PROJECTS_DATA[currentLang] || PROJECTS_DATA.sq;
+            const p = currentProjects[idx];
+            if (!p) return;
             const dict = i18n[currentLang];
             const safeLink = sanitizeSafeUrl(p.link);
             document.getElementById('pdet-cat').textContent = p.category;
             document.getElementById('pdet-title').textContent = p.title;
             document.getElementById('pdet-desc').textContent = p.desc;
+            document.getElementById('pdet-challenge').textContent = p.challenge || '';
+            document.getElementById('pdet-solution').textContent = p.solution || '';
             document.getElementById('pdet-tags').innerHTML = (Array.isArray(p.tags) ? p.tags : []).map(t => `
                 <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-800">${escapeHTML(t)}</span>
             `).join('');
@@ -2045,76 +2014,6 @@
             pDetModal.classList.remove('hidden');
         }
         function closeProjectDetailModal() { pDetModal.classList.add('hidden'); }
-
-        // Modal Shto / Modifiko Projekt
-        const projectModal = document.getElementById('project-modal');
-        const projectForm = document.getElementById('project-form');
-
-        function openProjectModal() {
-            document.getElementById('project-modal-title').textContent = i18n[currentLang].modal_proj_new;
-            document.getElementById('project-edit-index').value = '-1';
-            projectForm.reset();
-            projectModal.classList.remove('hidden');
-        }
-
-        function closeProjectModal() {
-            projectModal.classList.add('hidden');
-        }
-
-        function editProject(index) {
-            const p = projects[index];
-            document.getElementById('project-modal-title').textContent = i18n[currentLang].modal_proj_edit;
-            document.getElementById('project-edit-index').value = index;
-            document.getElementById('proj-category').value = p.category;
-            document.getElementById('proj-title').value = p.title;
-            document.getElementById('proj-desc').value = p.desc;
-            document.getElementById('proj-tags').value = p.tags.join(', ');
-            document.getElementById('proj-link').value = p.link || '';
-            projectModal.classList.remove('hidden');
-        }
-
-        function deleteProject(index) {
-            projects.splice(index, 1);
-            localStorage.setItem('elton_projects_sq', JSON.stringify(projects));
-            renderProjects();
-            showToast(getToastMsg('proj_deleted'));
-        }
-
-        function resetDefaultProjects() {
-            projects = [...defaultProjectsSq];
-            localStorage.setItem('elton_projects_sq', JSON.stringify(projects));
-            renderProjects();
-            showToast(getToastMsg('proj_reset'));
-        }
-
-        projectForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const idx = parseInt(document.getElementById('project-edit-index').value, 10);
-            const rawLink = document.getElementById('proj-link').value.trim();
-            if (rawLink && !sanitizeSafeUrl(rawLink)) {
-                showToast(getToastMsg('err_url'));
-                return;
-            }
-            const newProj = {
-                category: document.getElementById('proj-category').value.trim().slice(0, 50),
-                title: document.getElementById('proj-title').value.trim().slice(0, 100),
-                desc: document.getElementById('proj-desc').value.trim().slice(0, 600),
-                tags: document.getElementById('proj-tags').value.split(',').map(t => t.trim().slice(0, 30)).filter(Boolean).slice(0, 10),
-                link: sanitizeSafeUrl(rawLink)
-            };
-
-            if (idx >= 0) {
-                projects[idx] = newProj;
-                showToast(getToastMsg('proj_updated'));
-            } else {
-                projects.push(newProj);
-                showToast(getToastMsg('proj_saved'));
-            }
-
-            localStorage.setItem('elton_projects_sq', JSON.stringify(projects));
-            renderProjects();
-            closeProjectModal();
-        });
 
         // 6. Modal Përmbledhje CV
         const cvModal = document.getElementById('cv-modal');

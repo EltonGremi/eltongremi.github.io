@@ -1,0 +1,2139 @@
+<!DOCTYPE html>
+<html lang="sq" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elton Gremi | Specialist IT, Siguri Kibernetike & Administrim Sistemesh</title>
+    <meta name="description" content="Elton Gremi — Specialist IT dhe Siguri Kibernetike me mbi 17 vjet përvojë në administrimin e serverëve Windows/Linux, rrjeteve Cisco, Cloud (AWS, Azure, GCP) dhe DevOps.">
+    <meta name="keywords" content="Elton Gremi, Specialist IT Shqipëri, Siguri Kibernetike, Administrim Sistemesh dhe Rrjetesh, Linux Windows Server, Cisco, Cloud DevOps Docker Kubernetes, IT Systems Administrator, Fier, Shqipëri">
+    <meta name="author" content="Elton Gremi">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://eltongremi.github.io/">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:; img-src 'self' data: https:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:;">
+
+    <!-- Open Graph / Social SEO -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://eltongremi.github.io/">
+    <meta property="og:locale" content="sq_AL">
+    <meta property="og:locale:alternate" content="it_IT">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:title" content="Elton Gremi | Specialist IT, Siguri Kibernetike & Administrim Sistemesh">
+    <meta property="og:description" content="Portofoli profesional i Elton Gremi: 17+ vjet përvojë në infrastrukturat IT, serverë Linux/Windows, siguri kibernetike, Cisco, Cloud dhe DevOps.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Elton Gremi | Specialist IT & Siguri Kibernetike">
+    <meta name="twitter:description" content="Specialist IT & Siguri Kibernetike me mbi 17 vjet përvojë ndërkombëtare (SCAI SPA - Gruppo Deda).">
+
+    <!-- Schema.org JSON-LD (Structured Data per Motorët e Kërkimit) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Elton Gremi",
+      "url": "https://eltongremi.github.io/",
+      "jobTitle": "Specialist IT & Siguri Kibernetike | IT Systems Administrator",
+      "description": "Specialist IT me mbi 17 vjet përvojë në administrimin e infrastrukturave IT, serverëve Windows dhe Linux, rrjeteve Cisco, sigurisë kibernetike, Cloud dhe automatizimit DevOps.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Belinë, Fier",
+        "addressCountry": "AL"
+      },
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Cisco Networking Academy"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Immaginazione e Lavoro - Torino"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Shkolla e Mesme Didin Bishani, Kurjan, Fier"
+        }
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "SCAI SPA (Gruppo Deda)"
+      },
+      "knowsLanguage": ["sq", "it", "en"],
+      "knowsAbout": [
+        "Administrim Sistemesh Windows dhe Linux",
+        "Siguri Kibernetike",
+        "Rrjete LAN/WAN dhe Cisco Routing/Switching",
+        "Active Directory, DNS, DHCP, VPN, Firewall",
+        "Google Cloud, Microsoft Azure, AWS",
+        "Docker, Kubernetes, CI/CD, DevOps",
+        "Bash, Shell, PowerShell, Python, Go, React, Flutter",
+        "Vazhdimësi Operative, Backup dhe Restore, GDPR"
+      ]
+    }
+    </script>
+    
+    <!-- Google Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        slate: {
+                            850: '#151e2e',
+                            900: '#0f172a',
+                            950: '#080d17',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .cyber-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(16, 185, 129, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(16, 185, 129, 0.05) 1px, transparent 1px);
+        }
+        .dark .cyber-grid {
+            background-image: 
+                linear-gradient(to right, rgba(16, 185, 129, 0.07) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(16, 185, 129, 0.07) 1px, transparent 1px);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #10b981;
+        }
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white !important; color: black !important; }
+            section { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-200 font-sans antialiased transition-colors duration-300 selection:bg-emerald-500 selection:text-white">
+
+    <!-- ==================== NAVBAR FISSA ==================== -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/85 dark:bg-slate-950/85 backdrop-blur-md border-b border-slate-200 dark:border-slate-800/80 transition-colors duration-300 no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo / Emri -->
+                <a href="#top" class="flex items-center gap-2.5 group">
+                    <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-emerald-500 to-cyan-600 flex items-center justify-center text-white font-mono font-bold text-lg shadow-lg shadow-emerald-500/20 group-hover:scale-105 transition-transform">
+                        EG
+                    </div>
+                    <div>
+                        <span class="font-bold text-slate-900 dark:text-white tracking-tight block leading-none">ELTON GREMI</span>
+                        <span class="font-mono text-[10px] text-emerald-600 dark:text-emerald-400 tracking-wider uppercase">SysAdmin & CyberSec</span>
+                    </div>
+                </a>
+
+                <!-- Navigimi Desktop -->
+                <nav class="hidden lg:flex items-center space-x-1">
+                    <a href="#profili" data-i18n="nav_profile" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors">Profili</a>
+                    <a href="#kompetencat" data-i18n="nav_skills" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors">Kompetencat</a>
+                    <a href="#pervoja" data-i18n="nav_experience" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors">Përvoja</a>
+                    <a href="#arsimi" data-i18n="nav_education" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors">Arsimi</a>
+                    <a href="#projektet" data-i18n="nav_projects" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors">Projektet</a>
+                    <a href="#kontakti" data-i18n="nav_contact" class="px-3 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors">Kontakti</a>
+                </nav>
+
+                <!-- Veprimet Djathtas: Gjuhët (SQ/IT/EN) + Tema + Menu Mobile -->
+                <div class="flex items-center gap-2">
+                    <!-- Zgjedhësi i Gjuhës -->
+                    <div class="flex items-center bg-slate-100 dark:bg-slate-900 p-1 rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-mono">
+                        <button onclick="setLanguage('sq')" id="lang-sq" class="lang-btn px-2 py-1 rounded-lg font-bold bg-emerald-600 text-white transition-all">SQ</button>
+                        <button onclick="setLanguage('it')" id="lang-it" class="lang-btn px-2 py-1 rounded-lg font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">IT</button>
+                        <button onclick="setLanguage('en')" id="lang-en" class="lang-btn px-2 py-1 rounded-lg font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all">EN</button>
+                    </div>
+
+                    <button id="theme-toggle" aria-label="Ndrysho temën" class="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 border border-slate-200 dark:border-slate-800 transition-all">
+                        <i id="theme-icon" class="fas fa-sun text-sm"></i>
+                    </button>
+
+                    <a href="#kontakti" data-i18n="btn_contact_nav" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-medium shadow-md shadow-emerald-600/20 transition-all">
+                        <i class="fas fa-paper-plane text-xs"></i> Më kontaktoni
+                    </a>
+
+                    <button id="mobile-menu-btn" aria-label="Hap menunë" class="lg:hidden p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-800">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 px-4 pt-2 pb-4 space-y-1">
+            <a href="#profili" data-i18n="nav_profile" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Profili</a>
+            <a href="#kompetencat" data-i18n="nav_skills" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Kompetencat</a>
+            <a href="#pervoja" data-i18n="nav_experience" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Përvoja</a>
+            <a href="#arsimi" data-i18n="nav_education" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Arsimi</a>
+            <a href="#projektet" data-i18n="nav_projects" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Projektet</a>
+            <a href="#kontakti" data-i18n="nav_contact" class="mobile-link block px-3 py-2.5 rounded-lg text-base font-medium text-emerald-600 dark:text-emerald-400 font-semibold">Kontakti</a>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="top" class="relative pt-28 pb-20 lg:pt-36 lg:pb-28 overflow-hidden cyber-grid border-b border-slate-200 dark:border-slate-800/80">
+        <div class="absolute top-20 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-1/4 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Kolona Tekst -->
+                <div class="lg:col-span-7 space-y-6">
+                    <!-- Badge Disponueshmërie -->
+                    <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-400 text-xs font-mono font-medium">
+                        <span class="relative flex h-2.5 w-2.5">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                        </span>
+                        <span data-i18n="hero_badge">Disponueshmëri e menjëhershme • Turne dhe orare fleksibël • Patentë Kategoria B</span>
+                    </div>
+
+                    <div class="space-y-3">
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                            ELTON <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-cyan-500">GREMI</span>
+                            <span data-i18n="hero_title" class="block mt-2 text-xl sm:text-2xl font-semibold text-slate-700 dark:text-slate-300 tracking-normal">
+                                Specialist IT & Siguri Kibernetike <span class="text-emerald-500">|</span> <span class="text-slate-600 dark:text-slate-400 font-medium">Administrim Sistemesh & Rrjetesh</span>
+                            </span>
+                        </h1>
+                    </div>
+
+                    <p data-i18n="hero_bio" class="text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
+                        Specialist IT me <strong class="text-slate-900 dark:text-white font-semibold">mbi 17 vjet përvojë</strong> në administrimin e infrastrukturave IT, rrjeteve dhe sigurisë kibernetike. Kompetenca të avancuara në serverë <strong class="text-slate-800 dark:text-slate-200 font-medium">Windows Server dhe Linux</strong>, shërbime <strong class="text-slate-800 dark:text-slate-200 font-medium">Active Directory, DNS, DHCP, VPN, Firewall, Cisco</strong>, platforma <strong class="text-slate-800 dark:text-slate-200 font-medium">AWS, Azure, Google Cloud, Docker, Kubernetes</strong> dhe automatizim me <strong class="text-slate-800 dark:text-slate-200 font-medium">Python, Go, Bash dhe PowerShell</strong>.
+                    </p>
+
+                    <!-- Info të shpejta -->
+                    <div class="flex flex-wrap items-center gap-y-2 gap-x-6 text-sm text-slate-600 dark:text-slate-400 font-mono pt-1">
+                        <span class="flex items-center gap-2">
+                            <i class="fas fa-map-marker-alt text-emerald-500"></i> <span data-i18n="hero_location">Belinë, Fier, Shqipëri</span>
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <i class="fas fa-id-card text-cyan-500"></i> <span data-i18n="hero_license">Patentë: Kategoria B</span>
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <i class="fas fa-globe text-indigo-400"></i> SQ • IT (C1/C2) • EN (B1)
+                        </span>
+                    </div>
+
+                    <!-- Butonat CTA -->
+                    <div class="flex flex-wrap items-center gap-3 pt-4 no-print">
+                        <a href="#pervoja" data-i18n="cta_experience" class="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm shadow-lg shadow-emerald-600/25 flex items-center gap-2.5 transition-all hover:-translate-y-0.5">
+                            <i class="fas fa-briefcase"></i> Shiko Përvojën
+                        </a>
+                        <a href="#kontakti" data-i18n="cta_contact" class="px-6 py-3.5 rounded-xl bg-slate-900 dark:bg-slate-800 hover:bg-slate-800 dark:hover:bg-slate-700 text-white font-semibold text-sm border border-slate-700 flex items-center gap-2.5 transition-all hover:-translate-y-0.5">
+                            <i class="fas fa-envelope"></i> Më kontaktoni
+                        </a>
+                        <button onclick="openCvModal()" data-i18n="cta_cv" class="px-5 py-3.5 rounded-xl bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 font-medium text-sm border border-slate-300 dark:border-slate-700 flex items-center gap-2 transition-all">
+                            <i class="fas fa-file-pdf text-emerald-500"></i> Përmbledhje CV / PDF
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Kolona Terminale Interaktive -->
+                <div class="lg:col-span-5">
+                    <div class="rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl overflow-hidden">
+                        <div class="flex items-center justify-between px-4 py-3 bg-slate-950 border-b border-slate-800">
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-rose-500"></span>
+                                <span class="w-3 h-3 rounded-full bg-amber-500"></span>
+                                <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+                            </div>
+                            <span class="font-mono text-xs text-slate-400">elton@sysadmin-sec:~# status</span>
+                            <span class="text-xs font-mono text-emerald-400">AKTIV</span>
+                        </div>
+                        
+                        <div class="p-6 font-mono text-xs sm:text-sm space-y-4 text-slate-300">
+                            <div>
+                                <span class="text-emerald-400">$</span> <span class="text-cyan-300">whoami --profili</span>
+                                <div class="mt-1.5 pl-3 border-l-2 border-emerald-500/40 text-slate-300 space-y-1">
+                                    <p><span class="text-slate-500" data-i18n="term_role_lbl">Roli:</span> <span data-i18n="term_role_val">IT SysAdmin & Security Tech</span></p>
+                                    <p><span class="text-slate-500" data-i18n="term_exp_lbl">Përvoja:</span> <span data-i18n="term_exp_val">17+ Vjet (Torino, IT / Fier, AL)</span></p>
+                                    <p><span class="text-slate-500">Enterprise:</span> SCAI SPA (Gruppo Deda)</p>
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="text-emerald-400">$</span> <span class="text-cyan-300">cat /etc/kompetencat.conf</span>
+                                <div class="mt-2 grid grid-cols-2 gap-2">
+                                    <div class="bg-slate-950/80 p-2.5 rounded-lg border border-slate-800">
+                                        <div class="text-emerald-400 font-semibold text-xs" data-i18n="term_box1_t">SISTEME & RRJETE</div>
+                                        <div class="text-[11px] text-slate-400 mt-0.5">Linux, Windows Server, Cisco, VPN, AD</div>
+                                    </div>
+                                    <div class="bg-slate-950/80 p-2.5 rounded-lg border border-slate-800">
+                                        <div class="text-cyan-400 font-semibold text-xs" data-i18n="term_box2_t">SIGURI KIBERNETIKE</div>
+                                        <div class="text-[11px] text-slate-400 mt-0.5">Mbrojtje, Backup/Restore, GDPR</div>
+                                    </div>
+                                    <div class="bg-slate-950/80 p-2.5 rounded-lg border border-slate-800">
+                                        <div class="text-indigo-400 font-semibold text-xs">CLOUD & DEVOPS</div>
+                                        <div class="text-[11px] text-slate-400 mt-0.5">GCP, Azure, AWS, Docker, Kubernetes</div>
+                                    </div>
+                                    <div class="bg-slate-950/80 p-2.5 rounded-lg border border-slate-800">
+                                        <div class="text-amber-400 font-semibold text-xs" data-i18n="term_box4_t">ZHVILLIM & SKRIPTE</div>
+                                        <div class="text-[11px] text-slate-400 mt-0.5">Bash, PowerShell, Python, Go, React</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-2 border-t border-slate-800 grid grid-cols-3 gap-2 text-center">
+                                <div>
+                                    <div class="text-xl font-bold text-white">17+</div>
+                                    <div class="text-[10px] text-slate-400 uppercase" data-i18n="stat_years">Vjet Përvojë</div>
+                                </div>
+                                <div>
+                                    <div class="text-xl font-bold text-emerald-400">Cisco</div>
+                                    <div class="text-[10px] text-slate-400 uppercase" data-i18n="stat_hours">Rrjete & Siguri</div>
+                                </div>
+                                <div>
+                                    <div class="text-xl font-bold text-cyan-400">C1/C2</div>
+                                    <div class="text-[10px] text-slate-400 uppercase" data-i18n="stat_lang">Italisht & Shqip</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROFILI & VLERAT PROFESIONALE ==================== -->
+    <section id="profili" class="py-20 bg-white dark:bg-slate-900/50 border-b border-slate-200 dark:border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mb-14">
+                <span data-i18n="sec1_tag" class="font-mono text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">// 01. Profili & Vlerat Profesionale</span>
+                <h2 data-i18n="sec1_title" class="mt-2 text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">
+                    Përvojë, disiplinë operative dhe integritet profesional
+                </h2>
+                <p data-i18n="sec1_desc" class="mt-4 text-slate-600 dark:text-slate-400 text-base sm:text-lg leading-relaxed">
+                    Synoj të sjell përvojën mbi 17-vjeçare, disiplinën dhe integritetin profesional në një mjedis që vlerëson cilësinë dhe sigurinë e sistemeve, duke garantuar vazhdimësi operative dhe mbrojtje të plotë të infrastrukturave.
+                </p>
+            </div>
+
+            <!-- 4 Kartat e Vlerave Profesionale -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Vlera 1 -->
+                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 data-i18n="val1_title" class="text-lg font-bold text-slate-900 dark:text-white mb-2">Integritet dhe Konfidencialitet</h3>
+                    <p data-i18n="val1_desc" class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Integritet dhe konfidencialitet maksimal në trajtimin e sistemeve kritike dhe të dhënave të ndjeshme.
+                    </p>
+                </div>
+
+                <!-- Vlera 2 -->
+                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-cyan-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 data-i18n="val2_title" class="text-lg font-bold text-slate-900 dark:text-white mb-2">Disiplinë Operative</h3>
+                    <p data-i18n="val2_desc" class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Respektim i rreptë i procedurave të sigurisë, politikave të aksesit dhe protokolleve të emergjencës.
+                    </p>
+                </div>
+
+                <!-- Vlera 3 -->
+                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-indigo-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 data-i18n="val3_title" class="text-lg font-bold text-slate-900 dark:text-white mb-2">Përgjegjshmëri & GDPR</h3>
+                    <p data-i18n="val3_desc" class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Përgjegjshmëri në dokumentimin dhe raportimin e çdo ndërhyrjeje, në përputhje me GDPR dhe legjislacionin shqiptar.
+                    </p>
+                </div>
+
+                <!-- Vlera 4 -->
+                <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-amber-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3 data-i18n="val4_title" class="text-lg font-bold text-slate-900 dark:text-white mb-2">Bashkëpunim i Besueshëm</h3>
+                    <p data-i18n="val4_desc" class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                        Bashkëpunim i besueshëm me ekipe multidisiplinare, duke ruajtur konfidencialitetin e informacionit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== KOMPETENCAT TEKNIKE (INTERAKTIVE) ==================== -->
+    <section id="kompetencat" class="py-20 bg-slate-50 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <span data-i18n="sec2_tag" class="font-mono text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">// 02. Aftësitë & Teknologjitë</span>
+                    <h2 data-i18n="sec2_title" class="mt-2 text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">
+                        Kompetencat Teknike
+                    </h2>
+                    <p data-i18n="sec2_desc" class="mt-2 text-slate-600 dark:text-slate-400">
+                        Filtroni sipas fushës së specializimit për të parë teknologjitë, protokollet dhe gjuhët e programimit.
+                    </p>
+                </div>
+
+                <!-- Filtrat e Kategorive -->
+                <div class="flex flex-wrap gap-2 no-print" id="skill-filters">
+                    <button data-filter="all" data-i18n="flt_all" class="skill-filter-btn active px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-600 text-white shadow-sm transition-all">
+                        Të gjitha fushat
+                    </button>
+                    <button data-filter="sistemi" data-i18n="flt_sys" class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-all">
+                        Sisteme & Rrjete
+                    </button>
+                    <button data-filter="sicurezza" data-i18n="flt_sec" class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-all">
+                        Siguri Kibernetike
+                    </button>
+                    <button data-filter="cloud" data-i18n="flt_cloud" class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-all">
+                        Cloud & DevOps
+                    </button>
+                    <button data-filter="sviluppo" data-i18n="flt_dev" class="skill-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-medium bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-all">
+                        Zhvillim & Automatizim
+                    </button>
+                </div>
+            </div>
+
+            <!-- Rrjeta e Kompetencave -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="skills-grid">
+                
+                <!-- Karta 1: Sisteme & Rrjete -->
+                <div class="skill-card p-6 sm:p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm transition-all" data-category="sistemi">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center gap-3.5">
+                            <div class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-lg">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div>
+                                <h3 data-i18n="sk1_title" class="text-xl font-bold text-slate-900 dark:text-white">Sisteme & Rrjete</h3>
+                                <p class="text-xs font-mono text-slate-500">Systems & Network Administration</p>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-mono text-xs font-semibold">Core</span>
+                    </div>
+                    <p data-i18n="sk1_desc" class="text-sm text-slate-600 dark:text-slate-400 mb-5">
+                        Administrim i serverëve Windows dhe Linux, shërbime bazë të rrjetit dhe konfigurim e mirëmbajtje e infrastrukturave LAN/WAN.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Administrim Serverësh Windows & Linux</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Web Server</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">DNS & DHCP</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Active Directory</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Rrjete LAN/WAN</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Firewall & VPN</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Protokolle Sigurie</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Routing/Switching (Cisco)</span>
+                    </div>
+                </div>
+
+                <!-- Karta 2: Siguri Kibernetike -->
+                <div class="skill-card p-6 sm:p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm transition-all" data-category="sicurezza">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center gap-3.5">
+                            <div class="w-11 h-11 rounded-xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-lg">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <h3 data-i18n="sk2_title" class="text-xl font-bold text-slate-900 dark:text-white">Siguri Kibernetike</h3>
+                                <p class="text-xs font-mono text-slate-500">Cybersecurity & Business Continuity</p>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 font-mono text-xs font-semibold">Security</span>
+                    </div>
+                    <p data-i18n="sk2_desc" class="text-sm text-slate-600 dark:text-slate-400 mb-5">
+                        Mbrojtje proaktive e sistemeve dhe të dhënave, sigurim i vazhdimësisë operative dhe menaxhim i incidenteve e emergjencave.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Mbrojtje e Sistemeve & e të Dhënave</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Backup & Restore</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Vazhdimësi Operative</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Menaxhim Incidentesh & Emergjencash</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Monitorim Anomalish</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Përputhshmëri GDPR</span>
+                    </div>
+                </div>
+
+                <!-- Karta 3: Cloud & DevOps -->
+                <div class="skill-card p-6 sm:p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm transition-all" data-category="cloud">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center gap-3.5">
+                            <div class="w-11 h-11 rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Cloud & DevOps</h3>
+                                <p class="text-xs font-mono text-slate-500">Microservices & CI/CD</p>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-md bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 font-mono text-xs font-semibold">Modern Ops</span>
+                    </div>
+                    <p data-i18n="sk3_desc" class="text-sm text-slate-600 dark:text-slate-400 mb-5">
+                        Implementim i zgjidhjeve cloud, arkitekturave me mikroservise, ridondancës së shërbimeve dhe praktikave moderne DevOps.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Google Cloud</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Microsoft Azure</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">AWS</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Docker</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Kubernetes</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Mikroservise & Ridondancë</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Git & CI/CD</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Praktika DevOps</span>
+                    </div>
+                </div>
+
+                <!-- Karta 4: Zhvillim & Automatizim -->
+                <div class="skill-card p-6 sm:p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm transition-all" data-category="sviluppo">
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="flex items-center gap-3.5">
+                            <div class="w-11 h-11 rounded-xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center text-lg">
+                                <i class="fas fa-terminal"></i>
+                            </div>
+                            <div>
+                                <h3 data-i18n="sk4_title" class="text-xl font-bold text-slate-900 dark:text-white">Zhvillim & Automatizim</h3>
+                                <p class="text-xs font-mono text-slate-500">Scripting & Software Engineering</p>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400 font-mono text-xs font-semibold">Code</span>
+                    </div>
+                    <p data-i18n="sk4_desc" class="text-sm text-slate-600 dark:text-slate-400 mb-5">
+                        Gjuhë skriptimi dhe programimi për automatizimin e proceseve operative, raportimin teknik dhe zhvillimin e aplikacioneve.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Bash / Shell</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">PowerShell</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Python</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Go</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">HTML & JavaScript</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">React</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Flutter</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">PHP / C++ / Rust</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800/90 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-700">Automatizim & Raportim Teknik</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PËRVOJA PROFESIONALE ==================== -->
+    <section id="pervoja" class="py-20 bg-white dark:bg-slate-900/50 border-b border-slate-200 dark:border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <span data-i18n="sec3_tag" class="font-mono text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">// 03. Karriera & Përgjegjësitë</span>
+                <h2 data-i18n="sec3_title" class="mt-2 text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">
+                    Përvoja Profesionale
+                </h2>
+            </div>
+
+            <!-- Karta Kryesore e Përvojës -->
+            <div class="rounded-3xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-6 sm:p-10 shadow-sm">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-8 border-b border-slate-200 dark:border-slate-800">
+                    <div class="space-y-2">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-mono text-xs font-semibold">
+                            <i class="fas fa-calendar-alt"></i> 2007 — 2024 (17 Vjet)
+                        </div>
+                        <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
+                            IT Systems Administrator & Security Technician
+                        </h3>
+                        <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-base font-medium text-slate-700 dark:text-slate-300">
+                            <span class="flex items-center gap-2 text-emerald-600 dark:text-emerald-400 font-semibold">
+                                <i class="fas fa-building"></i> SCAI SPA (Gruppo Deda)
+                            </span>
+                            <span class="text-slate-400">•</span>
+                            <span class="flex items-center gap-1.5 text-slate-600 dark:text-slate-400">
+                                <i class="fas fa-map-pin"></i> <span data-i18n="exp_loc">Torino, Itali</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="lg:text-right max-w-md">
+                        <p data-i18n="exp_context" class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 bg-white dark:bg-slate-950 p-3.5 rounded-xl border border-slate-200 dark:border-slate-800">
+                            Kontekst biznesi me orientim të fortë drejt Cloud, DevOps dhe Data Platform, pjesë e <strong class="text-slate-900 dark:text-white">Grupit Deda</strong>, një nga polet kryesore teknologjike italiane.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tab Interaktivë për 5 Fushat e Përgjegjësisë -->
+                <div class="mt-8">
+                    <p data-i18n="exp_hint" class="text-xs font-mono uppercase tracking-wider text-slate-500 mb-4">Zgjidhni një fushë operative për të parë detajet e përgjegjësive:</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-6 no-print" id="exp-tabs">
+                        <button onclick="selectExpTab(0)" id="etab-0" class="exp-tab-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-emerald-600 text-white transition-all flex items-center gap-2">
+                            <i class="fas fa-network-wired"></i> <span data-i18n="etab_0">Administrim Sistemesh & Infrastrukturës</span>
+                        </button>
+                        <button onclick="selectExpTab(1)" id="etab-1" class="exp-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-all flex items-center gap-2">
+                            <i class="fas fa-shield-virus"></i> <span data-i18n="etab_1">Siguri Kibernetike & Mbrojtje</span>
+                        </button>
+                        <button onclick="selectExpTab(2)" id="etab-2" class="exp-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-all flex items-center gap-2">
+                            <i class="fas fa-satellite-dish"></i> <span data-i18n="etab_2">Monitorim & Menaxhim Incidentesh</span>
+                        </button>
+                        <button onclick="selectExpTab(3)" id="etab-3" class="exp-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-all flex items-center gap-2">
+                            <i class="fas fa-code"></i> <span data-i18n="etab_3">Zhvillim & Automatizim</span>
+                        </button>
+                        <button onclick="selectExpTab(4)" id="etab-4" class="exp-tab-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-medium bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition-all flex items-center gap-2">
+                            <i class="fas fa-cubes"></i> <span data-i18n="etab_4">Cloud & DevOps</span>
+                        </button>
+                    </div>
+
+                    <!-- Përmbajtja e Tab-it të Zgjedhur -->
+                    <div id="exp-tab-content" class="bg-white dark:bg-slate-950 rounded-2xl p-6 sm:p-8 border border-slate-200 dark:border-slate-800">
+                        <!-- Popullohet nga JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ARSIMI, CERTIFIKIMET & GJUHËT ==================== -->
+    <section id="arsimi" class="py-20 bg-slate-50 dark:bg-slate-950 border-b border-slate-200 dark:border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <span data-i18n="sec4_tag" class="font-mono text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">// 04. Formimi Akademik, Certifikimet & Gjuhët</span>
+                <h2 data-i18n="sec4_title" class="mt-2 text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">
+                    Arsimi dhe Certifikimet
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- Kolona Majtas: Timeline Arsimi (8 kolona) -->
+                <div class="lg:col-span-8 space-y-6">
+                    
+                    <!-- Certifikimi 1 -->
+                    <div class="relative pl-8 before:content-[''] before:absolute before:left-3 before:top-2 before:bottom-0 before:w-0.5 before:bg-emerald-500/30">
+                        <div class="absolute left-0 top-1.5 w-6 h-6 rounded-full bg-emerald-500/20 border-2 border-emerald-500 flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                                <span data-i18n="edu1_badge" class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-mono text-xs font-semibold">Certifikim Zyrtar</span>
+                                <span class="font-mono text-xs text-slate-500">Cisco Networking Academy</span>
+                            </div>
+                            <h3 data-i18n="edu1_title" class="text-xl font-bold text-slate-900 dark:text-white">Rrjete, Infrastrukturë dhe Siguri</h3>
+                            <p data-i18n="edu1_desc" class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                Arkitekturë rrjetesh, TCP/IP, routing, switching, siguri e rrjeteve dhe zgjidhje problemesh Cisco.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Formimi 2 -->
+                    <div class="relative pl-8 before:content-[''] before:absolute before:left-3 before:top-2 before:bottom-0 before:w-0.5 before:bg-cyan-500/30">
+                        <div class="absolute left-0 top-1.5 w-6 h-6 rounded-full bg-cyan-500/20 border-2 border-cyan-500 flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-cyan-500"></div>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                                <span data-i18n="edu2_badge" class="px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 font-mono text-xs font-semibold">1.200 Orë Intensive</span>
+                                <span class="font-mono text-xs text-slate-500">Torino, Itali</span>
+                            </div>
+                            <h3 data-i18n="edu2_title" class="text-xl font-bold text-slate-900 dark:text-white">Kurs Formimi Profesional Intensiv - 1.200 orë</h3>
+                            <p class="text-sm font-medium text-slate-700 dark:text-slate-300 mt-0.5">Immaginazione e Lavoro — Torino, Itali</p>
+                            <p data-i18n="edu2_desc" class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                                IT, rrjete kompjuterike, siguri informatike dhe sisteme monitorimi.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Diploma 3 -->
+                    <div class="relative pl-8">
+                        <div class="absolute left-0 top-1.5 w-6 h-6 rounded-full bg-slate-500/20 border-2 border-slate-500 flex items-center justify-center">
+                            <div class="w-2 h-2 rounded-full bg-slate-500"></div>
+                        </div>
+                        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                                <span data-i18n="edu3_badge" class="px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 font-mono text-xs font-semibold">Diplomë</span>
+                                <span class="font-mono text-xs text-slate-500">2002 • Kurjan, Fier</span>
+                            </div>
+                            <h3 data-i18n="edu3_title" class="text-xl font-bold text-slate-900 dark:text-white">Diplomë e Shkollës së Mesme</h3>
+                            <p data-i18n="edu3_desc" class="text-sm text-slate-600 dark:text-slate-400 mt-1">
+                                Shkolla e Mesme "Didin Bishani", Kurjan, Fier | 2002
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Kolona Djathtas: Gjuhët & Informacione Shtesë (4 kolona) -->
+                <div class="lg:col-span-4 space-y-6">
+                    
+                    <!-- Karta Gjuhët -->
+                    <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <h3 data-i18n="lang_card_title" class="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2.5 mb-5">
+                            <i class="fas fa-language text-emerald-500"></i> Gjuhët
+                        </h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-sm font-medium mb-1.5">
+                                    <span data-i18n="lang_sq_name" class="text-slate-900 dark:text-white">Shqip</span>
+                                    <span data-i18n="lang_sq_lvl" class="font-mono text-xs text-emerald-600 dark:text-emerald-400">Gjuhë amtare</span>
+                                </div>
+                                <div class="w-full h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                                    <div class="h-full bg-emerald-500 rounded-full" style="width: 100%"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-sm font-medium mb-1.5">
+                                    <span data-i18n="lang_it_name" class="text-slate-900 dark:text-white">Italisht</span>
+                                    <span data-i18n="lang_it_lvl" class="font-mono text-xs text-cyan-600 dark:text-cyan-400">Shkëlqyeshëm (C1/C2)</span>
+                                </div>
+                                <div class="w-full h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                                    <div class="h-full bg-cyan-500 rounded-full" style="width: 96%"></div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex justify-between text-sm font-medium mb-1.5">
+                                    <span data-i18n="lang_en_name" class="text-slate-900 dark:text-white">Anglisht</span>
+                                    <span data-i18n="lang_en_lvl" class="font-mono text-xs text-indigo-600 dark:text-indigo-400">Nivel funksional operativ (B1)</span>
+                                </div>
+                                <div class="w-full h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
+                                    <div class="h-full bg-indigo-500 rounded-full" style="width: 65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Karta Informacione Shtesë -->
+                    <div class="p-6 rounded-2xl bg-gradient-to-br from-slate-900 to-slate-800 text-white border border-slate-700 shadow-sm">
+                        <h3 data-i18n="add_info_title" class="text-lg font-bold flex items-center gap-2.5 mb-4">
+                            <i class="fas fa-check-circle text-emerald-400"></i> Informacione Shtesë
+                        </h3>
+                        <ul class="space-y-3 text-sm text-slate-300">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fas fa-car text-emerald-400 mt-1"></i>
+                                <span data-i18n="add_info_1"><strong>Patentë drejtimi Kategoria B</strong> — lëvizshmëri e plotë</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fas fa-clock text-cyan-400 mt-1"></i>
+                                <span data-i18n="add_info_2"><strong>Disponueshmëri e menjëhershme</strong> — turne dhe orare fleksibël</span>
+                            </li>
+                            <li class="flex items-start gap-2.5">
+                                <i class="fas fa-sync-alt text-indigo-400 mt-1"></i>
+                                <span data-i18n="add_info_3"><strong>Gatishmëri për formim të vazhdueshëm</strong> dhe teknologji të reja</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROJEKTET PERSONALE & LABORATORËT ==================== -->
+    <section id="projektet" class="py-20 bg-white dark:bg-slate-900/50 border-b border-slate-200 dark:border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <span data-i18n="sec5_tag" class="font-mono text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">// 05. Portofoli Teknik & R&D</span>
+                <h2 data-i18n="sec5_title" class="mt-2 text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">
+                    Projekte Personale & Laboratorë Teknikë
+                </h2>
+                <p data-i18n="sec5_desc" class="mt-2 text-slate-600 dark:text-slate-400 max-w-2xl">
+                    Arkitektura me disponueshmëri të lartë, sisteme të automatizuara për monitorimin e sigurisë dhe prototipe softuerike të zhvilluara për optimizimin e operacioneve IT.
+                </p>
+            </div>
+
+            <!-- Rrjeta e Projekteve (Vetëm lexim / Read-Only për vizitorët) -->
+            <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Popullohet nga PROJECTS_DATA në JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== KONTAKTI & FOOTER ==================== -->
+    <section id="kontakti" class="py-20 bg-slate-50 dark:bg-slate-950">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Kolona e Informacioneve të Kontaktit -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span data-i18n="sec6_tag" class="font-mono text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">// 06. Kontakt i Drejtpërdrejtë</span>
+                        <h2 data-i18n="sec6_title" class="mt-2 text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">
+                            Le të lidhemi
+                        </h2>
+                        <p data-i18n="sec6_desc" class="mt-3 text-slate-600 dark:text-slate-400 leading-relaxed">
+                            I disponueshëm për mundësi profesionale si Specialist IT, Administrim Sistemesh & Rrjetesh, Siguri Kibernetike, Cloud/DevOps ose konsulencë teknike.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4 pt-2">
+                        <!-- Email (Offuscato anti-scraping) -->
+                        <div class="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-4">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-lg">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs font-mono text-slate-500 flex items-center gap-1.5">
+                                        Email <span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">Anti-Bot</span>
+                                    </div>
+                                    <div id="protected-email-slot" class="text-sm sm:text-base font-semibold text-slate-900 dark:text-white">
+                                        <span class="font-mono text-xs text-slate-400">[Mbrojtur nga bot-et]</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="copy-email-btn" onclick="copyProtectedEmail()" aria-label="Kopjo email-in" class="px-3 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-emerald-500 transition-colors text-xs font-mono flex items-center gap-1.5 no-print" title="Kopjo Email-in">
+                                <i class="fas fa-copy"></i> <span data-i18n="btn_copy_email">Kopjo Email-in</span>
+                            </button>
+                        </div>
+
+                        <!-- Telefoni (Offuscato anti-scraping, shfaqet me ndërveprim) -->
+                        <div class="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center justify-between gap-4">
+                            <div class="flex items-center gap-3.5">
+                                <div class="w-11 h-11 rounded-xl bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 flex items-center justify-center text-lg">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <div data-i18n="lbl_phone" class="text-xs font-mono text-slate-500">Telefon / WhatsApp</div>
+                                    <div id="protected-phone-slot" class="text-sm sm:text-base font-semibold text-slate-900 dark:text-white">
+                                        <span class="font-mono text-xs text-slate-400">+355 68 ••• ••••</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="reveal-phone-btn" onclick="revealProtectedPhone()" aria-label="Shfaq telefonin" class="px-3 py-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-cyan-500 transition-colors text-xs font-mono flex items-center gap-1.5 no-print" title="Shfaq Telefonin">
+                                <i class="fas fa-eye"></i> <span data-i18n="btn_show_phone">Shfaq Telefonin</span>
+                            </button>
+                        </div>
+
+                        <!-- Vendndodhja -->
+                        <div class="p-4 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-center gap-3.5">
+                            <div class="w-11 h-11 rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <div data-i18n="lbl_address" class="text-xs font-mono text-slate-500">Adresa</div>
+                                <div data-i18n="hero_location" class="text-sm sm:text-base font-semibold text-slate-900 dark:text-white">
+                                    Belinë, Fier, Shqipëri
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kolona e Formularit të Kontaktit -->
+                <div class="lg:col-span-7 no-print">
+                    <div class="p-6 sm:p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-6">
+                            <h3 data-i18n="form_title" class="text-xl font-bold text-slate-900 dark:text-white">Dërgoni një mesazh të drejtpërdrejtë</h3>
+                            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-mono text-[11px]">
+                                <i class="fas fa-shield-alt"></i> <span data-i18n="form_sec_badge">Anti-Spam & XSS</span>
+                            </span>
+                        </div>
+                        
+                        <form id="contact-form" class="space-y-4" novalidate>
+                            <!-- Fushë Honeypot e fshehur kundër bot-eve automatike -->
+                            <div aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden;">
+                                <label for="company-website-url">Website URL (Mos e plotësoni këtë fushë)</label>
+                                <input type="text" id="company-website-url" name="website_url" tabindex="-1" autocomplete="off">
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="sender-name" data-i18n="form_name" class="block text-xs font-mono uppercase text-slate-500 mb-1.5">Emri / Kompania *</label>
+                                    <input type="text" id="sender-name" required maxlength="80" placeholder="P.sh. Arben Hoxha - Tech Shpk" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:border-emerald-500 transition-colors">
+                                </div>
+                                <div>
+                                    <label for="sender-email" data-i18n="form_email" class="block text-xs font-mono uppercase text-slate-500 mb-1.5">Email-i juaj *</label>
+                                    <input type="email" id="sender-email" required maxlength="120" placeholder="emri@kompania.al" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:border-emerald-500 transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="sender-subject" data-i18n="form_subject" class="block text-xs font-mono uppercase text-slate-500 mb-1.5">Subjekti</label>
+                                <select id="sender-subject" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:border-emerald-500 transition-colors">
+                                    <option value="Mundësi Punësimi IT / SysAdmin" data-i18n="opt_1">Mundësi Punësimi IT / SysAdmin</option>
+                                    <option value="Konsulencë Siguri Kibernetike / Rrjete" data-i18n="opt_2">Konsulencë Siguri Kibernetike / Rrjete</option>
+                                    <option value="Projekt Cloud / DevOps / Automatizim" data-i18n="opt_3">Projekt Cloud / DevOps / Automatizim</option>
+                                    <option value="Kontakt tjetër profesional" data-i18n="opt_4">Kontakt tjetër profesional</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="sender-message" data-i18n="form_msg" class="block text-xs font-mono uppercase text-slate-500 mb-1.5">Mesazhi *</label>
+                                <textarea id="sender-message" rows="4" required maxlength="1500" placeholder="Përshkruani shkurtimisht kërkesën ose mundësinë e bashkëpunimit..." class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white text-sm focus:outline-none focus:border-emerald-500 transition-colors"></textarea>
+                            </div>
+
+                            <!-- Verifikim dinamik matematikor Anti-Bot -->
+                            <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                                <label for="captcha-answer" class="text-xs font-mono text-slate-600 dark:text-slate-300 flex items-center gap-2">
+                                    <i class="fas fa-robot text-emerald-500"></i>
+                                    <span data-i18n="captcha_lbl">Verifikim sigurie: Sa bëjnë</span>
+                                    <strong id="captcha-question" class="text-emerald-600 dark:text-emerald-400 text-sm px-2 py-0.5 rounded bg-emerald-500/10">? + ?</strong>
+                                </label>
+                                <input type="number" id="captcha-answer" required maxlength="4" placeholder="Përgjigjja" class="w-full sm:w-28 px-3 py-2 rounded-lg bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 text-slate-900 dark:text-white font-mono text-sm focus:outline-none focus:border-emerald-500">
+                            </div>
+
+                            <div class="flex items-start gap-2.5 pt-1">
+                                <input type="checkbox" id="gdpr-consent" required class="mt-1 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500">
+                                <label for="gdpr-consent" data-i18n="form_gdpr" class="text-xs text-slate-500 dark:text-slate-400">
+                                    Autorizoj trajtimin e të dhënave personale në përputhje me legjislacionin shqiptar në fuqi dhe GDPR (Rregullore BE 2016/679).
+                                </label>
+                            </div>
+
+                            <button type="submit" data-i18n="form_submit" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm shadow-lg shadow-emerald-600/20 flex items-center justify-center gap-2 transition-all">
+                                <i class="fas fa-paper-plane"></i> Dërgo Mesazhin
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-800/80 text-center sm:text-left">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between gap-4">
+            <div class="text-xs text-slate-500 dark:text-slate-400">
+                © <span id="current-year">2026</span> <strong class="text-slate-800 dark:text-slate-200">ELTON GREMI</strong> — <span data-i18n="footer_rights">Specialist IT & Siguri Kibernetike. Të gjitha të drejtat e rezervuara.</span>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center gap-3 text-[11px] font-mono text-slate-500">
+                <span data-i18n="footer_sec_badge" class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400">
+                    <i class="fas fa-lock mr-1"></i> Formular i mbrojtur kundër spam-it & XSS • Përputhshmëri GDPR
+                </span>
+                <span data-i18n="footer_gdpr">
+                    Autorizoj trajtimin e të dhënave personale në përputhje me legjislacionin shqiptar në fuqi dhe GDPR (Rregullore BE 2016/679).
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== MODAL PËRMBLEDHJE CV / PDF ==================== -->
+    <div id="cv-modal" class="fixed inset-0 z-50 hidden bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4 no-print">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800">
+                <div>
+                    <h3 data-i18n="modal_cv_title" class="text-xl font-bold text-slate-900 dark:text-white">Përmbledhje e Curriculum Vitae</h3>
+                    <p class="text-xs font-mono text-emerald-500">ELTON GREMI • Specialist IT & Siguri Kibernetike</p>
+                </div>
+                <button onclick="closeCvModal()" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-900 dark:hover:text-white">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="py-5 space-y-4 text-sm text-slate-600 dark:text-slate-300">
+                <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                    <div class="font-bold text-slate-900 dark:text-white text-base">ELTON GREMI</div>
+                    <div id="modal-cv-contacts" class="text-xs font-mono text-emerald-600 dark:text-emerald-400 mt-0.5">Belinë, Fier, Shqipëri | Patentë: Kategoria B</div>
+                    <p data-i18n="modal_cv_bio" class="mt-2 text-xs leading-relaxed">
+                        Specialist IT me mbi 17 vjet përvojë (SCAI SPA - Gruppo Deda, Torino, Itali | 2007-2024) në administrimin e infrastrukturave IT, serverëve Windows dhe Linux, rrjeteve Cisco, sigurisë kibernetike, Cloud (GCP, Azure, AWS), Docker/Kubernetes dhe zhvillimit/automatizimit (Bash, PowerShell, Python, Go, React, Flutter).
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                    <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                        <div data-i18n="modal_cv_edu_t" class="font-bold text-slate-900 dark:text-white mb-1">Arsimi & Certifikimet</div>
+                        <ul class="space-y-1 list-disc list-inside text-slate-500 dark:text-slate-400">
+                            <li>Cisco Networking Academy (Rrjete, Infrastrukturë & Siguri)</li>
+                            <li>Kurs Intensiv 1.200 orë - Immaginazione e Lavoro (Torino)</li>
+                            <li>Diplomë e Shkollës së Mesme "Didin Bishani" (2002)</li>
+                        </ul>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                        <div data-i18n="modal_cv_lang_t" class="font-bold text-slate-900 dark:text-white mb-1">Gjuhët & Informacione</div>
+                        <ul class="space-y-1 list-disc list-inside text-slate-500 dark:text-slate-400">
+                            <li>Shqip (Gjuhë amtare), Italisht (C1/C2), Anglisht (B1)</li>
+                            <li>Patentë Kategoria B • Disponueshmëri e menjëhershme</li>
+                            <li>Përputhshmëri me GDPR (BE 2016/679)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-4 border-t border-slate-200 dark:border-slate-800 flex flex-wrap justify-end gap-3">
+                <button onclick="closeCvModal()" data-i18n="btn_close" class="px-4 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs sm:text-sm font-medium">
+                    Mbyll
+                </button>
+                <button onclick="window.print()" data-i18n="btn_print" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-semibold flex items-center gap-2 shadow-md">
+                    <i class="fas fa-print"></i> Printo / Ruaj si PDF
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== MODAL DETAJET E PROJEKTIT (READ-ONLY) ==================== -->
+    <div id="project-detail-modal" class="fixed inset-0 z-50 hidden bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4 no-print">
+        <div class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 shadow-2xl">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-200 dark:border-slate-800">
+                <span id="pdet-cat" class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-mono text-xs font-semibold"></span>
+                <button onclick="closeProjectDetailModal()" aria-label="Mbyll" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-900 dark:hover:text-white">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="py-5 space-y-4">
+                <h3 id="pdet-title" class="text-2xl font-bold text-slate-900 dark:text-white"></h3>
+                <p id="pdet-desc" class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                    <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                        <div data-i18n="pdet_challenge_lbl" class="text-xs font-mono uppercase text-amber-600 dark:text-amber-400 mb-1">Sfida Teknike</div>
+                        <p id="pdet-challenge" class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800">
+                        <div data-i18n="pdet_solution_lbl" class="text-xs font-mono uppercase text-emerald-600 dark:text-emerald-400 mb-1">Arkitektura & Zgjidhja</div>
+                        <p id="pdet-solution" class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed"></p>
+                    </div>
+                </div>
+
+                <div class="pt-2">
+                    <div data-i18n="pdet_tech_lbl" class="text-xs font-mono uppercase text-slate-500 mb-2">Teknologjitë e përdorura:</div>
+                    <div id="pdet-tags" class="flex flex-wrap gap-2"></div>
+                </div>
+            </div>
+            <div class="pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
+                <div id="pdet-link-box"></div>
+                <button onclick="closeProjectDetailModal()" data-i18n="btn_close" class="px-5 py-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-medium">
+                    Mbyll
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== NOTIFICA TOAST ==================== -->
+    <div id="toast-box" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none no-print">
+        <div class="px-5 py-3.5 rounded-2xl bg-slate-900 text-white border border-emerald-500/40 shadow-2xl flex items-center gap-3 text-sm font-medium">
+            <i class="fas fa-check-circle text-emerald-400 text-base"></i>
+            <span id="toast-message">Veprimi u krye me sukses</span>
+        </div>
+    </div>
+
+    <!-- ==================== JAVASCRIPT LOGJIKA & SHUMËGJUHËSIA (SQ DEFAULT) ==================== -->
+    <script>
+        let currentLang = 'sq';
+        let activeExpTab = 0;
+        const pageLoadTimestamp = Date.now();
+        let captchaExpectedAnswer = 0;
+
+        // Funksion sigurie: Escaping strikt anti-XSS për çdo tekst dinamik
+        function escapeHTML(str) {
+            if (typeof str !== 'string') return '';
+            return str
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        // Validim i sigurt i URL-ve (vetëm http/https për të bllokuar javascript: XSS)
+        function sanitizeSafeUrl(url) {
+            if (!url || typeof url !== 'string') return '';
+            const trimmed = url.trim();
+            try {
+                const parsed = new URL(trimmed);
+                if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+                    return parsed.href;
+                }
+            } catch (e) {
+                return '';
+            }
+            return '';
+        }
+
+        // Rindërtim dinamik i kontakteve (Offuscamento anti-scraping)
+        function getProtectedEmail() {
+            const p1 = ['e','l','t','o','n'].join('');
+            const p2 = ['g','r','e','m','i'].join('');
+            const d1 = ['g','m','a','i','l'].join('');
+            const d2 = ['c','o','m'].join('');
+            return `${p1}.${p2}@${d1}.${d2}`;
+        }
+
+        function getProtectedPhone() {
+            return ['+355', '68', '953', '2785'].join(' ');
+        }
+
+        function initProtectedContacts() {
+            const email = getProtectedEmail();
+            const emailSlot = document.getElementById('protected-email-slot');
+            if (emailSlot) {
+                emailSlot.textContent = '';
+                const a = document.createElement('a');
+                a.href = 'mailto:' + email;
+                a.className = 'hover:text-emerald-500 transition-colors';
+                a.textContent = email;
+                emailSlot.appendChild(a);
+            }
+        }
+
+        function copyProtectedEmail() {
+            copyToClipboard(getProtectedEmail(), getToastMsg('email_copied'));
+        }
+
+        function revealProtectedPhone() {
+            const phone = getProtectedPhone();
+            const phoneSlot = document.getElementById('protected-phone-slot');
+            const btn = document.getElementById('reveal-phone-btn');
+            if (phoneSlot) {
+                phoneSlot.textContent = '';
+                const a = document.createElement('a');
+                a.href = 'tel:' + phone.replace(/\s+/g, '');
+                a.className = 'hover:text-cyan-500 transition-colors';
+                a.textContent = phone;
+                phoneSlot.appendChild(a);
+            }
+            if (btn) {
+                btn.innerHTML = `<i class="fas fa-copy"></i> <span>${escapeHTML(i18n[currentLang].btn_copy_phone)}</span>`;
+                btn.onclick = () => copyToClipboard(phone, getToastMsg('phone_copied'));
+            }
+        }
+
+        // Gjenerimi i sfidës matematikore anti-bot
+        function generateMathCaptcha() {
+            const a = Math.floor(Math.random() * 8) + 2;
+            const b = Math.floor(Math.random() * 8) + 1;
+            captchaExpectedAnswer = a + b;
+            const qEl = document.getElementById('captcha-question');
+            const ansEl = document.getElementById('captcha-answer');
+            if (qEl) qEl.textContent = `${a} + ${b} = ?`;
+            if (ansEl) ansEl.value = '';
+        }
+
+        // Fjalori i plotë në Shqip (default), Italisht dhe Anglisht
+        const i18n = {
+            sq: {
+                nav_profile: "Profili",
+                nav_skills: "Kompetencat",
+                nav_experience: "Përvoja",
+                nav_education: "Arsimi",
+                nav_projects: "Projektet",
+                nav_contact: "Kontakti",
+                btn_contact_nav: "Më kontaktoni",
+                hero_badge: "Disponueshmëri e menjëhershme • Turne dhe orare fleksibël • Patentë Kategoria B",
+                hero_title: "Specialist IT & Siguri Kibernetike <span class='text-emerald-500'>|</span> <span class='text-slate-600 dark:text-slate-400 font-medium'>Administrim Sistemesh & Rrjetesh</span>",
+                hero_bio: "Specialist IT me <strong class='text-slate-900 dark:text-white font-semibold'>mbi 17 vjet përvojë</strong> në administrimin e infrastrukturave IT, rrjeteve dhe sigurisë kibernetike. Kompetenca të avancuara në serverë <strong class='text-slate-800 dark:text-slate-200 font-medium'>Windows Server dhe Linux</strong>, shërbime <strong class='text-slate-800 dark:text-slate-200 font-medium'>Active Directory, DNS, DHCP, VPN, Firewall, Cisco</strong>, platforma <strong class='text-slate-800 dark:text-slate-200 font-medium'>AWS, Azure, Google Cloud, Docker, Kubernetes</strong> dhe automatizim me <strong class='text-slate-800 dark:text-slate-200 font-medium'>Python, Go, Bash dhe PowerShell</strong>.",
+                hero_location: "Belinë, Fier, Shqipëri",
+                hero_license: "Patentë: Kategoria B",
+                cta_experience: "Shiko Përvojën",
+                cta_contact: "Më kontaktoni",
+                cta_cv: "Përmbledhje CV / PDF",
+                term_role_lbl: "Roli:",
+                term_role_val: "IT SysAdmin & Security Tech",
+                term_exp_lbl: "Përvoja:",
+                term_exp_val: "17+ Vjet (Torino, IT / Fier, AL)",
+                term_box1_t: "SISTEME & RRJETE",
+                term_box2_t: "SIGURI KIBERNETIKE",
+                term_box4_t: "ZHVILLIM & SKRIPTE",
+                stat_years: "Vjet Përvojë",
+                stat_hours: "Rrjete & Siguri",
+                stat_lang: "Italisht & Shqip",
+                sec1_tag: "// 01. Profili & Vlerat Profesionale",
+                sec1_title: "Përvojë, disiplinë operative dhe integritet profesional",
+                sec1_desc: "Synoj të sjell përvojën mbi 17-vjeçare, disiplinën dhe integritetin profesional në një mjedis që vlerëson cilësinë dhe sigurinë e sistemeve, duke garantuar vazhdimësi operative dhe mbrojtje të plotë të infrastrukturave.",
+                val1_title: "Integritet dhe Konfidencialitet",
+                val1_desc: "Integritet dhe konfidencialitet maksimal në trajtimin e sistemeve kritike dhe të dhënave të ndjeshme.",
+                val2_title: "Disiplinë Operative",
+                val2_desc: "Respektim i rreptë i procedurave të sigurisë, politikave të aksesit dhe protokolleve të emergjencës.",
+                val3_title: "Përgjegjshmëri & GDPR",
+                val3_desc: "Përgjegjshmëri në dokumentimin dhe raportimin e çdo ndërhyrjeje, në përputhje me GDPR dhe legjislacionin shqiptar.",
+                val4_title: "Bashkëpunim i Besueshëm",
+                val4_desc: "Bashkëpunim i besueshëm me ekipe multidisiplinare, duke ruajtur konfidencialitetin e informacionit.",
+                sec2_tag: "// 02. Aftësitë & Teknologjitë",
+                sec2_title: "Kompetencat Teknike",
+                sec2_desc: "Filtroni sipas fushës së specializimit për të parë teknologjitë, protokollet dhe gjuhët e programimit.",
+                flt_all: "Të gjitha fushat",
+                flt_sys: "Sisteme & Rrjete",
+                flt_sec: "Siguri Kibernetike",
+                flt_cloud: "Cloud & DevOps",
+                flt_dev: "Zhvillim & Automatizim",
+                sk1_title: "Sisteme & Rrjete",
+                sk1_desc: "Administrim i serverëve Windows dhe Linux, shërbime bazë të rrjetit dhe konfigurim e mirëmbajtje e infrastrukturave LAN/WAN.",
+                sk2_title: "Siguri Kibernetike",
+                sk2_desc: "Mbrojtje proaktive e sistemeve dhe të dhënave, sigurim i vazhdimësisë operative dhe menaxhim i incidenteve e emergjencave.",
+                sk3_desc: "Implementim i zgjidhjeve cloud, arkitekturave me mikroservise, ridondancës së shërbimeve dhe praktikave moderne DevOps.",
+                sk4_title: "Zhvillim & Automatizim",
+                sk4_desc: "Gjuhë skriptimi dhe programimi për automatizimin e proceseve operative, raportimin teknik dhe zhvillimin e aplikacioneve.",
+                sec3_tag: "// 03. Karriera & Përgjegjësitë",
+                sec3_title: "Përvoja Profesionale",
+                exp_loc: "Torino, Itali",
+                exp_context: "Kontekst biznesi me orientim të fortë drejt Cloud, DevOps dhe Data Platform, pjesë e <strong class='text-slate-900 dark:text-white'>Grupit Deda</strong>, një nga polet kryesore teknologjike italiane.",
+                exp_hint: "Zgjidhni një fushë operative për të parë detajet e përgjegjësive:",
+                etab_0: "Administrim Sistemesh & Infrastrukturës",
+                etab_1: "Siguri Kibernetike & Mbrojtje",
+                etab_2: "Monitorim & Menaxhim Incidentesh",
+                etab_3: "Zhvillim & Automatizim",
+                etab_4: "Cloud & DevOps",
+                sec4_tag: "// 04. Formimi Akademik, Certifikimet & Gjuhët",
+                sec4_title: "Arsimi dhe Certifikimet",
+                edu1_badge: "Certifikim Zyrtar",
+                edu1_title: "Rrjete, Infrastrukturë dhe Siguri",
+                edu1_desc: "Arkitekturë rrjetesh, TCP/IP, routing, switching, siguri e rrjeteve dhe zgjidhje problemesh Cisco.",
+                edu2_badge: "1.200 Orë Intensive",
+                edu2_title: "Kurs Formimi Profesional Intensiv - 1.200 orë",
+                edu2_desc: "IT, rrjete kompjuterike, siguri informatike dhe sisteme monitorimi.",
+                edu3_badge: "Diplomë",
+                edu3_title: "Diplomë e Shkollës së Mesme",
+                edu3_desc: "Shkolla e Mesme \"Didin Bishani\", Kurjan, Fier | 2002",
+                lang_card_title: "Gjuhët",
+                lang_sq_name: "Shqip",
+                lang_sq_lvl: "Gjuhë amtare",
+                lang_it_name: "Italisht",
+                lang_it_lvl: "Shkëlqyeshëm (C1/C2)",
+                lang_en_name: "Anglisht",
+                lang_en_lvl: "Nivel funksional operativ (B1)",
+                add_info_title: "Informacione Shtesë",
+                add_info_1: "<strong>Patentë drejtimi Kategoria B</strong> — lëvizshmëri e plotë",
+                add_info_2: "<strong>Disponueshmëri e menjëhershme</strong> — turne dhe orare fleksibël",
+                add_info_3: "<strong>Gatishmëri për formim të vazhdueshëm</strong> dhe teknologji të reja",
+                sec5_tag: "// 05. Portofoli Teknik & R&D",
+                sec5_title: "Projekte Personale & Laboratorë Teknikë",
+                sec5_desc: "Arkitektura me disponueshmëri të lartë, sisteme të automatizuara për monitorimin e sigurisë dhe prototipe softuerike të zhvilluara për optimizimin e operacioneve IT.",
+                sec6_tag: "// 06. Kontakt i Drejtpërdrejtë",
+                sec6_title: "Le të lidhemi",
+                sec6_desc: "I disponueshëm për mundësi profesionale si Specialist IT, Administrim Sistemesh & Rrjetesh, Siguri Kibernetike, Cloud/DevOps ose konsulencë teknike.",
+                lbl_phone: "Telefon / WhatsApp",
+                lbl_address: "Adresa",
+                btn_copy_email: "Kopjo Email-in",
+                btn_show_phone: "Shfaq Telefonin",
+                btn_copy_phone: "Kopjo Numrin",
+                form_title: "Dërgoni një mesazh të drejtpërdrejtë",
+                form_sec_badge: "Anti-Spam & XSS",
+                form_name: "Emri / Kompania *",
+                form_email: "Email-i juaj *",
+                form_subject: "Subjekti",
+                opt_1: "Mundësi Punësimi IT / SysAdmin",
+                opt_2: "Konsulencë Siguri Kibernetike / Rrjete",
+                opt_3: "Projekt Cloud / DevOps / Automatizim",
+                opt_4: "Kontakt tjetër profesional",
+                form_msg: "Mesazhi *",
+                captcha_lbl: "Verifikim sigurie: Sa bëjnë",
+                form_gdpr: "Autorizoj trajtimin e të dhënave personale në përputhje me legjislacionin shqiptar në fuqi dhe GDPR (Rregullore BE 2016/679).",
+                form_submit: "Dërgo Mesazhin",
+                footer_rights: "Specialist IT & Siguri Kibernetike. Të gjitha të drejtat e rezervuara.",
+                footer_sec_badge: "<i class='fas fa-lock mr-1'></i> Formular i mbrojtur kundër spam-it & XSS • Përputhshmëri GDPR",
+                footer_gdpr: "Autorizoj trajtimin e të dhënave personale në përputhje me legjislacionin shqiptar në fuqi dhe GDPR (Rregullore BE 2016/679).",
+                modal_cv_title: "Përmbledhje e Curriculum Vitae",
+                modal_cv_bio: "Specialist IT me mbi 17 vjet përvojë (SCAI SPA - Gruppo Deda, Torino, Itali | 2007-2024) në administrimin e infrastrukturave IT, serverëve Windows dhe Linux, rrjeteve Cisco, sigurisë kibernetike, Cloud (GCP, Azure, AWS), Docker/Kubernetes dhe zhvillimit/automatizimit (Bash, PowerShell, Python, Go, React, Flutter).",
+                modal_cv_edu_t: "Arsimi & Certifikimet",
+                modal_cv_lang_t: "Gjuhët & Informacione",
+                btn_close: "Mbyll",
+                btn_print: "Printo / Ruaj si PDF",
+                pdet_challenge_lbl: "Sfida Teknike",
+                pdet_solution_lbl: "Arkitektura & Zgjidhja",
+                pdet_tech_lbl: "Teknologjitë e përdorura:",
+                proj_details_btn: "Detajet Teknike",
+                proj_private_lbl: "Laborator Privat / Mjedis i Brendshëm",
+                proj_repo_lbl: "Hap Repository / Demo",
+                toasts: {
+                    email_copied: "Email-i u kopjua në clipboard!",
+                    phone_copied: "Numri i telefonit u kopjua!",
+                    msg_sent: "Verifikimi u krye! Mesazhi u përgatit për Elton Gremi.",
+                    err_too_fast: "Dërgim shumë i shpejtë. Ju lutem prisni disa sekonda.",
+                    err_rate_limit: "Keni arritur kufirin e dërgimeve (maks. 2 mesazhe çdo 10 minuta).",
+                    err_fields: "Plotësoni saktë emrin, email-in dhe mesazhin (min. 10 karaktere).",
+                    err_spam_links: "Mesazhi u bllokua nga filtri anti-spam (shumë linqe ose përmbajtje e dyshimtë).",
+                    err_captcha: "Përgjigjja e verifikimit matematikor nuk është e saktë.",
+                    err_gdpr: "Duhet të pranoni autorizimin GDPR përpara dërgimit."
+                }
+            },
+            it: {
+                nav_profile: "Profilo",
+                nav_skills: "Competenze",
+                nav_experience: "Esperienza",
+                nav_education: "Formazione",
+                nav_projects: "Progetti",
+                nav_contact: "Contatti",
+                btn_contact_nav: "Contattami",
+                hero_badge: "Disponibilità immediata • Turni e orari flessibili • Patente Categoria B",
+                hero_title: "Specialista IT & Sicurezza Informatica <span class='text-emerald-500'>|</span> <span class='text-slate-600 dark:text-slate-400 font-medium'>Amministrazione Sistemi & Reti</span>",
+                hero_bio: "Specialista IT con <strong class='text-slate-900 dark:text-white font-semibold'>oltre 17 anni di esperienza</strong> nell'amministrazione di infrastrutture IT, reti e sicurezza informatica. Competenze avanzate su <strong class='text-slate-800 dark:text-slate-200 font-medium'>Windows Server e Linux</strong>, <strong class='text-slate-800 dark:text-slate-200 font-medium'>Active Directory, DNS, DHCP, VPN, Firewall, Cisco</strong>, <strong class='text-slate-800 dark:text-slate-200 font-medium'>AWS, Azure, Google Cloud, Docker, Kubernetes</strong> e automazione con <strong class='text-slate-800 dark:text-slate-200 font-medium'>Python, Go, Bash e PowerShell</strong>.",
+                hero_location: "Belinë, Fier, Albania",
+                hero_license: "Patente: Categoria B",
+                cta_experience: "Vedi Esperienza",
+                cta_contact: "Contattami",
+                cta_cv: "Riepilogo CV / PDF",
+                term_role_lbl: "Ruolo:",
+                term_role_val: "IT SysAdmin & Security Tech",
+                term_exp_lbl: "Esperienza:",
+                term_exp_val: "17+ Anni (Torino, IT / Fier, AL)",
+                term_box1_t: "SISTEMI & RETI",
+                term_box2_t: "SICUREZZA INFORMATICA",
+                term_box4_t: "SVILUPPO & SCRIPT",
+                stat_years: "Anni Esperienza",
+                stat_hours: "Reti & Sicurezza",
+                stat_lang: "Italiano & Albanese",
+                sec1_tag: "// 01. Profilo & Valori Professionali",
+                sec1_title: "Esperienza, disciplina operativa e integrità professionale",
+                sec1_desc: "Porto oltre 17 anni di esperienza, disciplina e integrità professionale in contesti che valorizzano la qualità e la sicurezza dei sistemi, garantendo continuità operativa.",
+                val1_title: "Integrità e Riservatezza",
+                val1_desc: "Massima integrità e riservatezza nella gestione di sistemi critici e dati sensibili.",
+                val2_title: "Disciplina Operativa",
+                val2_desc: "Rigoroso rispetto delle procedure di sicurezza, politiche di accesso e protocolli di emergenza.",
+                val3_title: "Responsabilità & GDPR",
+                val3_desc: "Documentazione e reportistica puntuale di ogni intervento in conformità al GDPR e alla normativa vigente.",
+                val4_title: "Collaborazione Affidabile",
+                val4_desc: "Collaborazione efficace con team multidisciplinari, tutelando la riservatezza delle informazioni.",
+                sec2_tag: "// 02. Competenze & Tecnologie",
+                sec2_title: "Competenze Tecniche",
+                sec2_desc: "Filtra per area di specializzazione per esplorare tecnologie, protocolli e linguaggi.",
+                flt_all: "Tutte le aree",
+                flt_sys: "Sistemi & Reti",
+                flt_sec: "Sicurezza Informatica",
+                flt_cloud: "Cloud & DevOps",
+                flt_dev: "Sviluppo & Automazione",
+                sk1_title: "Sistemi & Reti",
+                sk1_desc: "Amministrazione server Windows e Linux, servizi core di rete e manutenzione infrastrutture LAN/WAN.",
+                sk2_title: "Sicurezza Informatica",
+                sk2_desc: "Protezione proattiva dei sistemi e dei dati, continuità operativa e gestione incidenti ed emergenze.",
+                sk3_desc: "Soluzioni cloud, microservizi, ridondanza dei servizi e pratiche DevOps moderne.",
+                sk4_title: "Sviluppo & Automazione",
+                sk4_desc: "Linguaggi di scripting e programmazione per automazione processi, reportistica tecnica e applicazioni.",
+                sec3_tag: "// 03. Carriera & Responsabilità",
+                sec3_title: "Esperienza Professionale",
+                exp_loc: "Torino, Italia",
+                exp_context: "Contesto aziendale fortemente orientato a Cloud, DevOps e Data Platform, parte del <strong class='text-slate-900 dark:text-white'>Gruppo Deda</strong>, uno dei principali poli tecnologici italiani.",
+                exp_hint: "Seleziona un'area operativa per esplorare le responsabilità:",
+                etab_0: "Amministrazione Sistemi & Infrastruttura",
+                etab_1: "Sicurezza Informatica & Protezione",
+                etab_2: "Monitoraggio & Gestione Incidenti",
+                etab_3: "Sviluppo & Automazione",
+                etab_4: "Cloud & DevOps",
+                sec4_tag: "// 04. Formazione, Certificazioni & Lingue",
+                sec4_title: "Istruzione e Certificazioni",
+                edu1_badge: "Certificazione Ufficiale",
+                edu1_title: "Reti, Infrastruttura e Sicurezza",
+                edu1_desc: "Architettura di rete, TCP/IP, routing, switching, sicurezza delle reti e troubleshooting Cisco.",
+                edu2_badge: "1.200 Ore Intensive",
+                edu2_title: "Corso Formazione Professionale Intensivo - 1.200 ore",
+                edu2_desc: "IT, reti informatiche, sicurezza informatica e sistemi di monitoraggio.",
+                edu3_badge: "Diploma",
+                edu3_title: "Diploma di Scuola Media Superiore",
+                edu3_desc: "Scuola Media Superiore \"Didin Bishani\", Kurjan, Fier | 2002",
+                lang_card_title: "Lingue",
+                lang_sq_name: "Albanese",
+                lang_sq_lvl: "Madrelingua",
+                lang_it_name: "Italiano",
+                lang_it_lvl: "Eccellente (C1/C2)",
+                lang_en_name: "Inglese",
+                lang_en_lvl: "Livello operativo (B1)",
+                add_info_title: "Informazioni Aggiuntive",
+                add_info_1: "<strong>Patente di guida Categoria B</strong> — piena mobilità",
+                add_info_2: "<strong>Disponibilità immediata</strong> — turni e orari flessibili",
+                add_info_3: "<strong>Formazione continua</strong> su nuove tecnologie",
+                sec5_tag: "// 05. Portfolio Tecnico & R&D",
+                sec5_title: "Progetti Personali & Laboratori Tecnici",
+                sec5_desc: "Architetture ad alta affidabilità, sistemi automatizzati di monitoraggio sicurezza e prototipi software sviluppati per ottimizzare le operazioni IT.",
+                sec6_tag: "// 06. Contatto Diretto",
+                sec6_title: "Mettiamoci in contatto",
+                sec6_desc: "Disponibile per opportunità professionali come Specialista IT, SysAdmin, Sicurezza Informatica, Cloud/DevOps o consulenza.",
+                lbl_phone: "Telefono / WhatsApp",
+                lbl_address: "Indirizzo",
+                btn_copy_email: "Copia Email",
+                btn_show_phone: "Mostra Telefono",
+                btn_copy_phone: "Copia Numero",
+                form_title: "Invia un messaggio diretto",
+                form_sec_badge: "Anti-Spam & XSS",
+                form_name: "Nome / Azienda *",
+                form_email: "La tua Email *",
+                form_subject: "Oggetto",
+                opt_1: "Opportunità Lavorativa IT / SysAdmin",
+                opt_2: "Consulenza Sicurezza Informatica / Reti",
+                opt_3: "Progetto Cloud / DevOps / Automazione",
+                opt_4: "Altro contatto professionale",
+                form_msg: "Messaggio *",
+                captcha_lbl: "Verifica sicurezza: Quanto fa",
+                form_gdpr: "Autorizzo il trattamento dei dati personali ai sensi della normativa vigente e del GDPR (Regolamento UE 2016/679).",
+                form_submit: "Invia Messaggio",
+                footer_rights: "Specialista IT & Sicurezza Informatica. Tutti i diritti riservati.",
+                footer_sec_badge: "<i class='fas fa-lock mr-1'></i> Modulo protetto anti-spam & XSS • Conformità GDPR",
+                footer_gdpr: "Autorizzo il trattamento dei dati personali ai sensi della normativa vigente e del GDPR (Regolamento UE 2016/679).",
+                modal_cv_title: "Riepilogo Curriculum Vitae",
+                modal_cv_bio: "Specialista IT con oltre 17 anni di esperienza (SCAI SPA - Gruppo Deda, Torino, Italia | 2007-2024) in infrastrutture IT, server Windows/Linux, reti Cisco, cybersecurity, Cloud (GCP, Azure, AWS), Docker/Kubernetes e automazione.",
+                modal_cv_edu_t: "Istruzione & Certificazioni",
+                modal_cv_lang_t: "Lingue & Informazioni",
+                btn_close: "Chiudi",
+                btn_print: "Stampa / Salva come PDF",
+                pdet_challenge_lbl: "Sfida Tecnica",
+                pdet_solution_lbl: "Architettura & Soluzione",
+                pdet_tech_lbl: "Tecnologie utilizzate:",
+                proj_details_btn: "Dettagli Tecnici",
+                proj_private_lbl: "Laboratorio Privato / Ambiente Interno",
+                proj_repo_lbl: "Apri Repository / Demo",
+                toasts: {
+                    email_copied: "Email copiata!",
+                    phone_copied: "Numero copiato!",
+                    msg_sent: "Verifica superata! Messaggio preparato per Elton Gremi.",
+                    err_too_fast: "Invio troppo rapido. Attendi qualche secondo.",
+                    err_rate_limit: "Limite di invii raggiunto (max 2 messaggi ogni 10 minuti).",
+                    err_fields: "Compila correttamente nome, email e messaggio (min. 10 caratteri).",
+                    err_spam_links: "Messaggio bloccato dal filtro anti-spam (troppi link o contenuto sospetto).",
+                    err_captcha: "La risposta alla verifica matematica non è corretta.",
+                    err_gdpr: "Devi accettare l'informativa GDPR prima dell'invio."
+                }
+            },
+            en: {
+                nav_profile: "Profile",
+                nav_skills: "Skills",
+                nav_experience: "Experience",
+                nav_education: "Education",
+                nav_projects: "Projects",
+                nav_contact: "Contact",
+                btn_contact_nav: "Contact Me",
+                hero_badge: "Immediate availability • Flexible shifts & hours • Category B License",
+                hero_title: "IT & Cybersecurity Specialist <span class='text-emerald-500'>|</span> <span class='text-slate-600 dark:text-slate-400 font-medium'>Systems & Network Administration</span>",
+                hero_bio: "IT Specialist with <strong class='text-slate-900 dark:text-white font-semibold'>over 17 years of experience</strong> managing IT infrastructures, networks, and cybersecurity. Advanced expertise in <strong class='text-slate-800 dark:text-slate-200 font-medium'>Windows Server and Linux</strong>, <strong class='text-slate-800 dark:text-slate-200 font-medium'>Active Directory, DNS, DHCP, VPN, Firewall, Cisco</strong>, <strong class='text-slate-800 dark:text-slate-200 font-medium'>AWS, Azure, Google Cloud, Docker, Kubernetes</strong>, and automation using <strong class='text-slate-800 dark:text-slate-200 font-medium'>Python, Go, Bash, and PowerShell</strong>.",
+                hero_location: "Belinë, Fier, Albania",
+                hero_license: "Driving License: Category B",
+                cta_experience: "View Experience",
+                cta_contact: "Contact Me",
+                cta_cv: "CV Summary / PDF",
+                term_role_lbl: "Role:",
+                term_role_val: "IT SysAdmin & Security Tech",
+                term_exp_lbl: "Experience:",
+                term_exp_val: "17+ Years (Turin, IT / Fier, AL)",
+                term_box1_t: "SYSTEMS & NETWORKS",
+                term_box2_t: "CYBERSECURITY",
+                term_box4_t: "DEV & AUTOMATION",
+                stat_years: "Years Exp.",
+                stat_hours: "Networks & Sec",
+                stat_lang: "Italian & Albanian",
+                sec1_tag: "// 01. Profile & Professional Values",
+                sec1_title: "Experience, operational discipline, and professional integrity",
+                sec1_desc: "Dedicated to bringing over 17 years of experience, operational discipline, and integrity to organizations that value system quality and security.",
+                val1_title: "Integrity & Confidentiality",
+                val1_desc: "Highest standards of integrity and confidentiality when handling critical systems and sensitive data.",
+                val2_title: "Operational Discipline",
+                val2_desc: "Strict adherence to security procedures, access control policies, and emergency response protocols.",
+                val3_title: "Accountability & GDPR",
+                val3_desc: "Thorough documentation and reporting of every intervention in full compliance with GDPR and Albanian legislation.",
+                val4_title: "Reliable Collaboration",
+                val4_desc: "Trusted teamwork across multidisciplinary environments while safeguarding information confidentiality.",
+                sec2_tag: "// 02. Skills & Technologies",
+                sec2_title: "Technical Skills",
+                sec2_desc: "Filter by domain to explore technologies, protocols, and programming languages.",
+                flt_all: "All Areas",
+                flt_sys: "Systems & Networks",
+                flt_sec: "Cybersecurity",
+                flt_cloud: "Cloud & DevOps",
+                flt_dev: "Dev & Automation",
+                sk1_title: "Systems & Networks",
+                sk1_desc: "Windows & Linux server administration, core network services, and LAN/WAN infrastructure maintenance.",
+                sk2_title: "Cybersecurity",
+                sk2_desc: "Proactive system and data protection, business continuity, and incident/emergency management.",
+                sk3_desc: "Cloud solutions, microservices architectures, service redundancy, and modern DevOps practices.",
+                sk4_title: "Development & Automation",
+                sk4_desc: "Scripting and programming languages for process automation, technical reporting, and internal apps.",
+                sec3_tag: "// 03. Career & Responsibilities",
+                sec3_title: "Professional Experience",
+                exp_loc: "Turin, Italy",
+                exp_context: "Enterprise environment strongly focused on Cloud, DevOps, and Data Platforms, part of <strong class='text-slate-900 dark:text-white'>Gruppo Deda</strong>, a leading Italian technology hub.",
+                exp_hint: "Select an operational domain to view detailed responsibilities:",
+                etab_0: "Systems & Infrastructure Admin",
+                etab_1: "Cybersecurity & Protection",
+                etab_2: "Monitoring & Incident Response",
+                etab_3: "Development & Automation",
+                etab_4: "Cloud & DevOps",
+                sec4_tag: "// 04. Education, Certifications & Languages",
+                sec4_title: "Education & Certifications",
+                edu1_badge: "Official Certification",
+                edu1_title: "Networking, Infrastructure & Security",
+                edu1_desc: "Network architecture, TCP/IP, routing, switching, network security, and Cisco troubleshooting.",
+                edu2_badge: "1,200 Intensive Hours",
+                edu2_title: "Intensive Professional IT Training - 1,200 hours",
+                edu2_desc: "IT systems, computer networks, information security, and monitoring infrastructures.",
+                edu3_badge: "High School Diploma",
+                edu3_title: "High School Diploma",
+                edu3_desc: "\"Didin Bishani\" High School, Kurjan, Fier | 2002",
+                lang_card_title: "Languages",
+                lang_sq_name: "Albanian",
+                lang_sq_lvl: "Native",
+                lang_it_name: "Italian",
+                lang_it_lvl: "Proficient (C1/C2)",
+                lang_en_name: "English",
+                lang_en_lvl: "Operational Working Level (B1)",
+                add_info_title: "Additional Information",
+                add_info_1: "<strong>Category B Driving License</strong> — full mobility",
+                add_info_2: "<strong>Immediate availability</strong> — flexible shifts and schedules",
+                add_info_3: "<strong>Continuous learning</strong> in emerging Cloud & Security tech",
+                sec5_tag: "// 05. Technical Portfolio & R&D",
+                sec5_title: "Personal Projects & Technical Labs",
+                sec5_desc: "High-availability architectures, automated security monitoring systems, and software prototypes built to streamline IT operations.",
+                sec6_tag: "// 06. Direct Contact",
+                sec6_title: "Get in Touch",
+                sec6_desc: "Available for opportunities as IT Specialist, Systems & Network Administrator, Cybersecurity Specialist, Cloud/DevOps Engineer, or technical consultant.",
+                lbl_phone: "Phone / WhatsApp",
+                lbl_address: "Location",
+                btn_copy_email: "Copy Email",
+                btn_show_phone: "Show Phone",
+                btn_copy_phone: "Copy Number",
+                form_title: "Send a direct message",
+                form_sec_badge: "Anti-Spam & XSS",
+                form_name: "Name / Company *",
+                form_email: "Your Email *",
+                form_subject: "Subject",
+                opt_1: "IT / SysAdmin Job Opportunity",
+                opt_2: "Cybersecurity / Network Consulting",
+                opt_3: "Cloud / DevOps / Automation Project",
+                opt_4: "Other Professional Inquiry",
+                form_msg: "Message *",
+                captcha_lbl: "Security check: What is",
+                form_gdpr: "I authorize the processing of personal data in accordance with applicable Albanian legislation and GDPR (EU Regulation 2016/679).",
+                form_submit: "Send Message",
+                footer_rights: "IT & Cybersecurity Specialist. All rights reserved.",
+                footer_sec_badge: "<i class='fas fa-lock mr-1'></i> Anti-spam & XSS protected form • GDPR Compliant",
+                footer_gdpr: "I authorize the processing of personal data in accordance with applicable Albanian legislation and GDPR (EU Regulation 2016/679).",
+                modal_cv_title: "Curriculum Vitae Summary",
+                modal_cv_bio: "IT Specialist with over 17 years of experience (SCAI SPA - Gruppo Deda, Turin, Italy | 2007-2024) in IT infrastructures, Windows/Linux servers, Cisco networking, cybersecurity, Cloud (GCP, Azure, AWS), Docker/Kubernetes, and automation.",
+                modal_cv_edu_t: "Education & Certifications",
+                modal_cv_lang_t: "Languages & Info",
+                btn_close: "Close",
+                btn_print: "Print / Save as PDF",
+                pdet_challenge_lbl: "Technical Challenge",
+                pdet_solution_lbl: "Architecture & Solution",
+                pdet_tech_lbl: "Technologies used:",
+                proj_details_btn: "Technical Details",
+                proj_private_lbl: "Private Lab / Internal Environment",
+                proj_repo_lbl: "Open Repository / Demo",
+                toasts: {
+                    email_copied: "Email copied!",
+                    phone_copied: "Phone number copied!",
+                    msg_sent: "Security check passed! Message prepared for Elton Gremi.",
+                    err_too_fast: "Submitted too quickly. Please wait a few seconds.",
+                    err_rate_limit: "Submission limit reached (max 2 messages every 10 minutes).",
+                    err_fields: "Please fill in valid name, email, and message (min. 10 characters).",
+                    err_spam_links: "Message blocked by anti-spam filter (too many links or suspicious tags).",
+                    err_captcha: "Incorrect math verification answer.",
+                    err_gdpr: "Please accept the GDPR consent before sending."
+                }
+            }
+        };
+
+        // Përmbajtja e 5 fushave të përvojës në 3 gjuhë (SQ parësore)
+        const expData = {
+            sq: [
+                {
+                    title: "Administrim i Sistemeve dhe Infrastrukturës",
+                    badge: "Windows • Linux • DNS/DHCP • Cisco • Kubernetes",
+                    icon: "fa-network-wired",
+                    items: [
+                        "Administrova serverët Windows dhe Linux, duke përfshirë konfigurimin, mirëmbajtjen dhe zgjidhjen e problemeve.",
+                        "Menaxhova shërbimet e rrjetit: DNS, DHCP, Active Directory dhe server web.",
+                        "Konfigurova dhe mirëmbaja rrjetet LAN/WAN, firewall-et, VPN dhe protokollet e sigurisë.",
+                        "Implementova dhe administrova sisteme backup dhe restaurimi, duke garantuar integritetin e të dhënave.",
+                        "Përdorja mjete si Git, Docker dhe Kubernetes për automatizim dhe ridondancë shërbimesh."
+                    ]
+                },
+                {
+                    title: "Siguri Kibernetike dhe Mbrojtje e Sistemeve",
+                    badge: "Politika Sigurie • Monitorim Proaktiv • Raportim",
+                    icon: "fa-shield-virus",
+                    items: [
+                        "Zbatova politika sigurie për mbrojtjen e sistemeve dhe të dhënave.",
+                        "Monitorova vazhdimisht sistemet për incidente dhe anomali, duke ndërhyrë në mënyrë proaktive.",
+                        "Koordinova me ekipet e sigurisë gjatë menaxhimit të emergjencave.",
+                        "Dokumentova çdo ndërhyrje dhe përgatita raporte teknike periodike."
+                    ]
+                },
+                {
+                    title: "Monitorim dhe Menaxhim Incidentesh",
+                    badge: "Kohë Reale • Komunikim Elektronik • Ekipe Multi-funksionale",
+                    icon: "fa-satellite-dish",
+                    items: [
+                        "Monitorova infrastrukturat dhe menaxhova incidentet në kohë reale.",
+                        "Përdorja pajisje radio dhe sisteme komunikimi elektronik operativ.",
+                        "Bashkëpunova me ekipe multi-funksionale për zgjidhjen e problemeve komplekse."
+                    ]
+                },
+                {
+                    title: "Zhvillim dhe Automatizim",
+                    badge: "Bash • PowerShell • Python • Go • React • Flutter",
+                    icon: "fa-code",
+                    items: [
+                        "Shkruaja script-e në Bash, Shell dhe PowerShell për automatizimin e detyrave të përsëritura.",
+                        "Zhvillova zgjidhje të vogla softuerike në Python, JavaScript, PHP dhe Go për nevoja të brendshme.",
+                        "Përdorja React dhe Flutter për prototipe dhe aplikacione."
+                    ]
+                },
+                {
+                    title: "Cloud dhe DevOps",
+                    badge: "Google Cloud • Azure • AWS • Docker • Kubernetes • CI/CD",
+                    icon: "fa-cubes",
+                    items: [
+                        "Kam operuar në një kontekst biznesi me orientim të fortë drejt Cloud, DevOps dhe Data Platform, pjesë e Grupit Deda, një nga polet kryesore teknologjike italiane.",
+                        "Përdorja Google Cloud, Microsoft Azure dhe AWS për zgjidhje cloud.",
+                        "Implementova mikroservise dhe ridondancë shërbimesh me Docker dhe Kubernetes.",
+                        "Përdorja Git dhe praktika DevOps për integrim dhe dorëzim të vazhdueshëm."
+                    ]
+                }
+            ],
+            it: [
+                {
+                    title: "Amministrazione Sistemi e Infrastruttura",
+                    badge: "Windows • Linux • DNS/DHCP • Cisco • Kubernetes",
+                    icon: "fa-network-wired",
+                    items: [
+                        "Amministrazione di server Windows e Linux: configurazione, manutenzione e troubleshooting.",
+                        "Gestione servizi di rete: DNS, DHCP, Active Directory e web server.",
+                        "Configurazione e manutenzione di reti LAN/WAN, firewall, VPN e protocolli di sicurezza.",
+                        "Implementazione di sistemi di backup e ripristino garantendo l'integrità dei dati.",
+                        "Utilizzo di Git, Docker e Kubernetes per automazione e ridondanza dei servizi."
+                    ]
+                },
+                {
+                    title: "Sicurezza Informatica e Protezione Sistemi",
+                    badge: "Policy di Sicurezza • Monitoraggio Proattivo • Reportistica",
+                    icon: "fa-shield-virus",
+                    items: [
+                        "Applicazione di policy di sicurezza per la protezione dei sistemi e dei dati.",
+                        "Monitoraggio continuo per incidenti e anomalie con intervento proattivo.",
+                        "Coordinamento con i team di sicurezza nella gestione delle emergenze.",
+                        "Documentazione dettagliata degli interventi e report tecnici periodici."
+                    ]
+                },
+                {
+                    title: "Monitoraggio e Gestione Incidenti",
+                    badge: "Real-Time • Comunicazioni Operative • Team Multi-funzionali",
+                    icon: "fa-satellite-dish",
+                    items: [
+                        "Monitoraggio delle infrastrutture e gestione degli incidenti in tempo reale.",
+                        "Utilizzo di apparati radio e sistemi di comunicazione elettronica operativa.",
+                        "Collaborazione con team multi-funzionali per la risoluzione di problemi complessi."
+                    ]
+                },
+                {
+                    title: "Sviluppo e Automazione",
+                    badge: "Bash • PowerShell • Python • Go • React • Flutter",
+                    icon: "fa-code",
+                    items: [
+                        "Scrittura di script in Bash, Shell e PowerShell per automatizzare attività ripetitive.",
+                        "Sviluppo di soluzioni software interne in Python, JavaScript, PHP e Go.",
+                        "Utilizzo di React e Flutter per prototipi e applicazioni."
+                    ]
+                },
+                {
+                    title: "Cloud e DevOps",
+                    badge: "Google Cloud • Azure • AWS • Docker • Kubernetes • CI/CD",
+                    icon: "fa-cubes",
+                    items: [
+                        "Operatività in contesto enterprise orientato a Cloud, DevOps e Data Platform nel Gruppo Deda.",
+                        "Utilizzo di Google Cloud, Microsoft Azure e AWS per soluzioni cloud.",
+                        "Implementazione di microservizi e ridondanza con Docker e Kubernetes.",
+                        "Utilizzo di Git e pratiche DevOps per integrazione e rilascio continuo."
+                    ]
+                }
+            ],
+            en: [
+                {
+                    title: "Systems & Infrastructure Administration",
+                    badge: "Windows • Linux • DNS/DHCP • Cisco • Kubernetes",
+                    icon: "fa-network-wired",
+                    items: [
+                        "Administered Windows and Linux servers, including setup, maintenance, and troubleshooting.",
+                        "Managed core network services: DNS, DHCP, Active Directory, and web servers.",
+                        "Configured and maintained LAN/WAN networks, firewalls, VPNs, and security protocols.",
+                        "Implemented and managed backup and disaster recovery systems ensuring data integrity.",
+                        "Leveraged Git, Docker, and Kubernetes for service automation and redundancy."
+                    ]
+                },
+                {
+                    title: "Cybersecurity & System Protection",
+                    badge: "Security Policies • Proactive Monitoring • Technical Audits",
+                    icon: "fa-shield-virus",
+                    items: [
+                        "Enforced security policies to protect critical infrastructure and sensitive data.",
+                        "Continuously monitored systems for anomalies and incidents with proactive remediation.",
+                        "Coordinated with security teams during emergency response operations.",
+                        "Documented every intervention and prepared periodic technical reports."
+                    ]
+                },
+                {
+                    title: "Monitoring & Incident Management",
+                    badge: "Real-Time • Tactical Comms • Cross-Functional Teams",
+                    icon: "fa-satellite-dish",
+                    items: [
+                        "Monitored infrastructures and resolved incidents in real time.",
+                        "Operated radio equipment and tactical electronic communication systems.",
+                        "Collaborated with cross-functional teams to solve complex technical issues."
+                    ]
+                },
+                {
+                    title: "Development & Automation",
+                    badge: "Bash • PowerShell • Python • Go • React • Flutter",
+                    icon: "fa-code",
+                    items: [
+                        "Developed Bash, Shell, and PowerShell scripts to automate repetitive tasks.",
+                        "Built internal software utilities in Python, JavaScript, PHP, and Go.",
+                        "Used React and Flutter for rapid prototyping and applications."
+                    ]
+                },
+                {
+                    title: "Cloud & DevOps",
+                    badge: "Google Cloud • Azure • AWS • Docker • Kubernetes • CI/CD",
+                    icon: "fa-cubes",
+                    items: [
+                        "Operated in a Cloud, DevOps, and Data Platform-driven enterprise within Gruppo Deda.",
+                        "Utilized Google Cloud, Microsoft Azure, and AWS for cloud architectures.",
+                        "Deployed microservices and service redundancy using Docker and Kubernetes.",
+                        "Applied Git and DevOps practices for continuous integration and delivery."
+                    ]
+                }
+            ]
+        };
+
+        /* =========================================================================
+           PROJEKTET PERSONALE (READ-ONLY PËR VIZITORËT)
+           Për të shtuar ose modifikuar një projekt, redaktoni direkt këtë listë
+           këtu në index.html dhe bëni git push në GitHub (eltongremi.github.io).
+           ========================================================================= */
+        const PROJECTS_DATA = {
+            sq: [
+                {
+                    category: "Automatizim & Vazhdimësi Operative",
+                    title: "Automatizim Backup & Disaster Recovery Linux/Windows me Bash, PowerShell & Python",
+                    desc: "Kornizë e automatizuar për kopje rezervë të enkriptuara, verifikim të integritetit të të dhënave dhe restaurim të shpejtë në mjedise hibride Windows Server dhe Linux.",
+                    challenge: "Eliminimi i ndërhyrjeve manuale në backup-et ditore dhe garantimi i kohës minimale të rikuperimit (RTO/RPO) për shërbimet kritike Active Directory, DNS dhe databazat.",
+                    solution: "Skripte të planifikuara në Bash dhe PowerShell të koordinuara me Python për sinkronizim inkremental, enkriptim AES-256, test automatik të restaurimit dhe njoftime teknike.",
+                    tags: ["Bash", "PowerShell", "Python", "Linux", "Windows Server", "Backup/Restore"],
+                    link: "" // Opsional: vendosni linkun e repository GitHub p.sh. "https://github.com/eltongremi/..."
+                },
+                {
+                    category: "Cloud & DevOps",
+                    title: "Infrastrukturë Mikroservisesh me Lartësi Disponueshmërie në Docker & Kubernetes",
+                    desc: "Arkitekturë kontejnerësh me ridondancë shërbimesh, balancim ngarkese dhe pipeline CI/CD të integruara me Git për shpërndarje të vazhdueshme dhe pa ndërprerje.",
+                    challenge: "Sigurimi i shkallëzueshmërisë dhe vazhdimësisë operative të aplikacioneve të brendshme gjatë përditësimeve të shpeshta.",
+                    solution: "Orkestrim në Kubernetes me shërbime të kontejnerizuara në Docker, kontrolle shëndeti (health checks), rifillim automatik (rolling updates) dhe konfigurime të versionuara në Git.",
+                    tags: ["Docker", "Kubernetes", "Git", "CI/CD", "Cloud", "Ridondancë"],
+                    link: ""
+                },
+                {
+                    category: "Siguri Kibernetike & Monitorim",
+                    title: "Sistem Monitorimi & Përgjigje Proaktive ndaj Incidenteve të Sigurisë",
+                    desc: "Platformë dhe mjete diagnostikuese për monitorimin në kohë reale të serverëve, firewall-eve, trafikut VPN dhe gjenerimin e raporteve periodike të auditimit.",
+                    challenge: "Zbulimi i hershëm i anomalive të rrjetit, tentativave të paautorizuara të aksesit dhe ruajtja e gjurmueshmërisë në përputhje me standardet GDPR.",
+                    solution: "Analizë e automatizuar e regjistrave (logs) në Linux/Windows me Go dhe Python, alarme në kohë reale dhe dokumentim i strukturuar i çdo ndërhyrjeje operative.",
+                    tags: ["Siguri Kibernetike", "Go", "Python", "Firewall & VPN", "Monitorim", "GDPR"],
+                    link: ""
+                }
+            ],
+            it: [
+                {
+                    category: "Automazione & Continuità Operativa",
+                    title: "Automazione Backup & Disaster Recovery Linux/Windows con Bash, PowerShell & Python",
+                    desc: "Framework automatizzato per backup cifrati, verifica dell'integrità dei dati e ripristino rapido su infrastrutture ibride Windows Server e Linux.",
+                    challenge: "Eliminare le attività manuali nei backup giornalieri e garantire tempi minimi di ripristino (RTO/RPO) per servizi critici Active Directory, DNS e database.",
+                    solution: "Script schedulati in Bash e PowerShell orchestrati con Python per sincronizzazione incrementale, cifratura, test automatico di restore e reportistica tecnica.",
+                    tags: ["Bash", "PowerShell", "Python", "Linux", "Windows Server", "Backup/Restore"],
+                    link: ""
+                },
+                {
+                    category: "Cloud & DevOps",
+                    title: "Infrastruttura a Microservizi ad Alta Disponibilità su Docker & Kubernetes",
+                    desc: "Architettura containerizzata con ridondanza dei servizi, load balancing e pipeline CI/CD integrate con Git per rilasci continui senza downtime.",
+                    challenge: "Garantire scalabilità e continuità operativa delle applicazioni interne durante gli aggiornamenti frequenti.",
+                    solution: "Orchestrazione su Kubernetes con container Docker, health check automatici, rolling update e configurazioni versionate su Git.",
+                    tags: ["Docker", "Kubernetes", "Git", "CI/CD", "Cloud", "Ridondanza"],
+                    link: ""
+                },
+                {
+                    category: "Sicurezza Informatica & Monitoraggio",
+                    title: "Sistema di Monitoraggio & Risposta Proattiva agli Incidenti di Sicurezza",
+                    desc: "Strumenti diagnostici per il monitoraggio in tempo reale di server, firewall, tunnel VPN e generazione di report periodici di audit.",
+                    challenge: "Rilevare tempestivamente anomalie di rete e accessi non autorizzati mantenendo la tracciabilità conforme al GDPR.",
+                    solution: "Analisi automatizzata dei log di sistema con Go e Python, alerting proattivo e documentazione strutturata di ogni intervento operativo.",
+                    tags: ["Cybersecurity", "Go", "Python", "Firewall & VPN", "Monitoraggio", "GDPR"],
+                    link: ""
+                }
+            ],
+            en: [
+                {
+                    category: "Automation & Business Continuity",
+                    title: "Linux/Windows Backup & Disaster Recovery Automation with Bash, PowerShell & Python",
+                    desc: "Automated framework for encrypted backups, data integrity verification, and rapid recovery across hybrid Windows Server and Linux environments.",
+                    challenge: "Eliminate manual overhead in daily backups while ensuring minimal RTO/RPO for critical Active Directory, DNS, and database services.",
+                    solution: "Scheduled Bash and PowerShell scripts coordinated via Python for incremental sync, encryption, automated restore testing, and technical reporting.",
+                    tags: ["Bash", "PowerShell", "Python", "Linux", "Windows Server", "Backup/Restore"],
+                    link: ""
+                },
+                {
+                    category: "Cloud & DevOps",
+                    title: "High-Availability Microservices Infrastructure on Docker & Kubernetes",
+                    desc: "Containerized architecture featuring service redundancy, load balancing, and Git-integrated CI/CD pipelines for zero-downtime deployments.",
+                    challenge: "Ensure scalability and continuous availability of internal services during frequent software releases.",
+                    solution: "Kubernetes orchestration with Docker containers, automated health checks, rolling updates, and Git-versioned infrastructure configs.",
+                    tags: ["Docker", "Kubernetes", "Git", "CI/CD", "Cloud", "Redundancy"],
+                    link: ""
+                },
+                {
+                    category: "Cybersecurity & Monitoring",
+                    title: "Proactive Security Monitoring & Incident Response System",
+                    desc: "Diagnostic utilities for real-time monitoring of servers, firewalls, and VPN tunnels with automated compliance audit reporting.",
+                    challenge: "Early detection of network anomalies and unauthorized access attempts while maintaining GDPR-compliant audit trails.",
+                    solution: "Automated log correlation using Go and Python, real-time alerting, and structured incident intervention reporting.",
+                    tags: ["Cybersecurity", "Go", "Python", "Firewall & VPN", "Monitoring", "GDPR"],
+                    link: ""
+                }
+            ]
+        };
+
+        function getToastMsg(key) {
+            return i18n[currentLang].toasts[key] || "";
+        }
+
+        // Ndryshimi i gjuhës (SQ default)
+        function setLanguage(lang) {
+            currentLang = lang;
+            document.documentElement.lang = lang;
+
+            // Përditëso butonat e gjuhës
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('bg-emerald-600', 'text-white', 'font-bold');
+                btn.classList.add('text-slate-600', 'dark:text-slate-400', 'font-medium');
+            });
+            const activeBtn = document.getElementById('lang-' + lang);
+            if (activeBtn) {
+                activeBtn.classList.remove('text-slate-600', 'dark:text-slate-400', 'font-medium');
+                activeBtn.classList.add('bg-emerald-600', 'text-white', 'font-bold');
+            }
+
+            // Përditëso të gjithë tekstet me data-i18n
+            const dict = i18n[lang];
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (dict[key] !== undefined) {
+                    el.innerHTML = dict[key];
+                }
+            });
+
+            // Përditëso tab-in aktiv të përvojës dhe projektet
+            selectExpTab(activeExpTab);
+            renderProjects();
+        }
+
+        // 1. Menaxhimi i temës Dark / Light
+        const htmlEl = document.documentElement;
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+
+        function updateThemeIcon() {
+            if (htmlEl.classList.contains('dark')) {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            } else {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+        }
+
+        if (localStorage.getItem('theme') === 'light') {
+            htmlEl.classList.remove('dark');
+        }
+        updateThemeIcon();
+
+        themeToggleBtn.addEventListener('click', () => {
+            htmlEl.classList.toggle('dark');
+            localStorage.setItem('theme', htmlEl.classList.contains('dark') ? 'dark' : 'light');
+            updateThemeIcon();
+        });
+
+        // 2. Menu Mobile
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // 3. Filtrat e Kompetencave
+        const filterBtns = document.querySelectorAll('.skill-filter-btn');
+        const skillCards = document.querySelectorAll('.skill-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-emerald-600', 'text-white', 'shadow-sm');
+                    b.classList.add('bg-white', 'dark:bg-slate-900', 'text-slate-700', 'dark:text-slate-300', 'border', 'border-slate-200', 'dark:border-slate-800');
+                });
+                btn.classList.remove('bg-white', 'dark:bg-slate-900', 'text-slate-700', 'dark:text-slate-300', 'border', 'border-slate-200', 'dark:border-slate-800');
+                btn.classList.add('bg-emerald-600', 'text-white', 'shadow-sm');
+
+                const filter = btn.getAttribute('data-filter');
+                skillCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.classList.remove('hidden');
+                    } else {
+                        card.classList.add('hidden');
+                    }
+                });
+            });
+        });
+
+        // 4. Tab-et e Përvojës Profesionale
+        function selectExpTab(index) {
+            activeExpTab = index;
+            const buttons = document.querySelectorAll('.exp-tab-btn');
+            buttons.forEach((btn, i) => {
+                if (i === index) {
+                    btn.classList.remove('bg-white', 'dark:bg-slate-950', 'text-slate-700', 'dark:text-slate-300', 'border', 'border-slate-200', 'dark:border-slate-800');
+                    btn.classList.add('bg-emerald-600', 'text-white');
+                } else {
+                    btn.classList.remove('bg-emerald-600', 'text-white');
+                    btn.classList.add('bg-white', 'dark:bg-slate-950', 'text-slate-700', 'dark:text-slate-300', 'border', 'border-slate-200', 'dark:border-slate-800');
+                }
+            });
+
+            const area = expData[currentLang][index];
+            const container = document.getElementById('exp-tab-content');
+            container.innerHTML = `
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-5 mb-6 border-b border-slate-200 dark:border-slate-800">
+                    <div class="flex items-center gap-3.5">
+                        <div class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-lg">
+                            <i class="fas ${escapeHTML(area.icon)}"></i>
+                        </div>
+                        <h4 class="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">${escapeHTML(area.title)}</h4>
+                    </div>
+                    <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-900 text-emerald-600 dark:text-emerald-400 font-mono text-xs border border-slate-200 dark:border-slate-800">
+                        ${escapeHTML(area.badge)}
+                    </span>
+                </div>
+                <ul class="space-y-3.5">
+                    ${area.items.map(item => `
+                        <li class="flex items-start gap-3 text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+                            <i class="fas fa-check-circle text-emerald-500 mt-1 shrink-0"></i>
+                            <span>${escapeHTML(item)}</span>
+                        </li>
+                    `).join('')}
+                </ul>
+            `;
+        }
+
+        // 5. Renderimi i Projekteve (Vetëm Lexim / Read-Only me Escaping strikt anti-XSS)
+        function renderProjects() {
+            const dict = i18n[currentLang];
+            const currentProjects = PROJECTS_DATA[currentLang] || PROJECTS_DATA.sq;
+            const grid = document.getElementById('projects-grid');
+            grid.innerHTML = currentProjects.map((proj, idx) => {
+                const safeCat = escapeHTML(proj.category);
+                const safeTitle = escapeHTML(proj.title);
+                const safeDesc = escapeHTML(proj.desc);
+                const safeLink = sanitizeSafeUrl(proj.link);
+                const safeTagsHtml = (Array.isArray(proj.tags) ? proj.tags : []).map(tag => `
+                    <span class="px-2.5 py-1 rounded-md bg-white dark:bg-slate-950 text-slate-700 dark:text-slate-300 font-mono text-[11px] border border-slate-200 dark:border-slate-800">
+                        ${escapeHTML(tag)}
+                    </span>
+                `).join('');
+
+                return `
+                <article class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-emerald-500/50 transition-all flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-mono text-xs font-semibold">
+                                ${safeCat}
+                            </span>
+                            <button onclick="openProjectDetail(${idx})" aria-label="${escapeHTML(dict.proj_details_btn)}" class="p-1.5 rounded-lg text-slate-400 hover:text-cyan-500 hover:bg-slate-200/50 dark:hover:bg-slate-800 transition-colors no-print" title="${escapeHTML(dict.proj_details_btn)}">
+                                <i class="fas fa-expand-alt text-xs"></i>
+                            </button>
+                        </div>
+                        <h3 onclick="openProjectDetail(${idx})" class="cursor-pointer text-lg font-bold text-slate-900 dark:text-white mb-2.5 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                            ${safeTitle}
+                        </h3>
+                        <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-5">
+                            ${safeDesc}
+                        </p>
+                    </div>
+
+                    <div>
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            ${safeTagsHtml}
+                        </div>
+                        <div class="flex items-center justify-between pt-3 border-t border-slate-200/70 dark:border-slate-800/70">
+                            ${safeLink ? `
+                                <a href="${escapeHTML(safeLink)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono font-semibold text-emerald-600 dark:text-emerald-400 hover:underline">
+                                    <i class="fab fa-github"></i> ${escapeHTML(dict.proj_repo_lbl)} <i class="fas fa-external-link-alt text-[10px]"></i>
+                                </a>
+                            ` : `
+                                <span class="inline-flex items-center gap-1.5 text-xs font-mono text-slate-400">
+                                    <i class="fas fa-lock text-[10px]"></i> ${escapeHTML(dict.proj_private_lbl)}
+                                </span>
+                            `}
+                            <button onclick="openProjectDetail(${idx})" class="text-xs font-mono font-semibold text-cyan-600 dark:text-cyan-400 hover:underline no-print">
+                                ${escapeHTML(dict.proj_details_btn)} →
+                            </button>
+                        </div>
+                    </div>
+                </article>
+            `}).join('');
+        }
+
+        // Modal Detajet e Projektit (Read-Only me përdorim të sigurt textContent / escaping)
+        const pDetModal = document.getElementById('project-detail-modal');
+        function openProjectDetail(idx) {
+            const currentProjects = PROJECTS_DATA[currentLang] || PROJECTS_DATA.sq;
+            const p = currentProjects[idx];
+            if (!p) return;
+            const dict = i18n[currentLang];
+            const safeLink = sanitizeSafeUrl(p.link);
+            document.getElementById('pdet-cat').textContent = p.category;
+            document.getElementById('pdet-title').textContent = p.title;
+            document.getElementById('pdet-desc').textContent = p.desc;
+            document.getElementById('pdet-challenge').textContent = p.challenge || '';
+            document.getElementById('pdet-solution').textContent = p.solution || '';
+            document.getElementById('pdet-tags').innerHTML = (Array.isArray(p.tags) ? p.tags : []).map(t => `
+                <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-950 text-slate-800 dark:text-slate-200 font-mono text-xs border border-slate-200 dark:border-slate-800">${escapeHTML(t)}</span>
+            `).join('');
+            
+            const linkBox = document.getElementById('pdet-link-box');
+            linkBox.textContent = '';
+            if (safeLink) {
+                const a = document.createElement('a');
+                a.href = safeLink;
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
+                a.className = 'inline-flex items-center gap-2 text-xs font-mono font-semibold text-emerald-500 hover:underline';
+                a.innerHTML = `<i class="fab fa-github"></i> ${escapeHTML(dict.proj_repo_lbl)}`;
+                linkBox.appendChild(a);
+            } else {
+                linkBox.innerHTML = `<span class="text-xs font-mono text-slate-400"><i class="fas fa-shield-alt text-emerald-500 mr-1"></i> ${escapeHTML(dict.proj_private_lbl)}</span>`;
+            }
+            pDetModal.classList.remove('hidden');
+        }
+        function closeProjectDetailModal() { pDetModal.classList.add('hidden'); }
+
+        // 6. Modal Përmbledhje CV
+        const cvModal = document.getElementById('cv-modal');
+        function openCvModal() {
+            const cvContactSlot = document.getElementById('modal-cv-contacts');
+            if (cvContactSlot) {
+                cvContactSlot.textContent = `Belinë, Fier, Shqipëri | ${getProtectedPhone()} | ${getProtectedEmail()} | Patentë: Kategoria B`;
+            }
+            cvModal.classList.remove('hidden');
+        }
+        function closeCvModal() { cvModal.classList.add('hidden'); }
+
+        // 7. Formulari i Kontaktit me Mbrojtje Multi-Shtresore Anti-Spam & XSS
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Shtresa 1: Kontrolli Honeypot (nëse një bot ka plotësuar fushën e fshehur, bllokohet në heshtje)
+            const honeypotVal = document.getElementById('company-website-url').value;
+            if (honeypotVal && honeypotVal.trim() !== '') {
+                this.reset();
+                return;
+            }
+
+            // Shtresa 2: Kontrolli Kohor (Time-to-Submit < 3 sekonda = script automatik)
+            if (Date.now() - pageLoadTimestamp < 3000) {
+                showToast(getToastMsg('err_too_fast'));
+                return;
+            }
+
+            // Shtresa 3: Rate Limiting (maksimumi 2 dërgime çdo 10 minuta)
+            const now = Date.now();
+            const windowMs = 10 * 60 * 1000;
+            let submissions = [];
+            try {
+                submissions = JSON.parse(localStorage.getItem('eg_contact_rate') || '[]').filter(ts => now - ts < windowMs);
+            } catch (err) {
+                submissions = [];
+            }
+            if (submissions.length >= 2) {
+                showToast(getToastMsg('err_rate_limit'));
+                return;
+            }
+
+            // Shtresa 4: Validimi i fushave & Regex Email
+            const name = document.getElementById('sender-name').value.trim();
+            const email = document.getElementById('sender-email').value.trim();
+            const subject = document.getElementById('sender-subject').value;
+            const message = document.getElementById('sender-message').value.trim();
+            const gdprChecked = document.getElementById('gdpr-consent').checked;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+            if (name.length < 2 || !emailRegex.test(email) || message.length < 10) {
+                showToast(getToastMsg('err_fields'));
+                return;
+            }
+
+            // Shtresa 5: Detektimi i Spam-it (shumë URL http/https ose tag-e HTML/script)
+            const urlMatches = message.match(/https?:\/\//gi) || [];
+            const htmlTagPattern = /<\s*\/?\s*(script|iframe|object|embed|form|img|a|style|svg)\b/i;
+            if (urlMatches.length > 1 || htmlTagPattern.test(message) || htmlTagPattern.test(name)) {
+                showToast(getToastMsg('err_spam_links'));
+                return;
+            }
+
+            // Shtresa 6: Verifikimi matematikor Anti-Bot
+            const userCaptcha = parseInt(document.getElementById('captcha-answer').value, 10);
+            if (isNaN(userCaptcha) || userCaptcha !== captchaExpectedAnswer) {
+                showToast(getToastMsg('err_captcha'));
+                generateMathCaptcha();
+                return;
+            }
+
+            if (!gdprChecked) {
+                showToast(getToastMsg('err_gdpr'));
+                return;
+            }
+
+            // Regjistro dërgimin për rate-limiting
+            submissions.push(now);
+            localStorage.setItem('eg_contact_rate', JSON.stringify(submissions));
+
+            showToast(getToastMsg('msg_sent'));
+            
+            const targetEmail = getProtectedEmail();
+            const mailtoLink = `mailto:${targetEmail}?subject=${encodeURIComponent(subject + ' - ' + name)}&body=${encodeURIComponent('Nga: ' + name + ' (' + email + ')\n\n' + message)}`;
+            setTimeout(() => {
+                window.location.href = mailtoLink;
+            }, 800);
+            
+            this.reset();
+            generateMathCaptcha();
+        });
+
+        // 8. Kopjimi i shpejtë & Toast
+        function copyToClipboard(text, msg) {
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            showToast(msg);
+        }
+
+        let toastTimeout;
+        function showToast(message) {
+            const toastBox = document.getElementById('toast-box');
+            document.getElementById('toast-message').textContent = message;
+            toastBox.classList.remove('translate-y-20', 'opacity-0');
+            clearTimeout(toastTimeout);
+            toastTimeout = setTimeout(() => {
+                toastBox.classList.add('translate-y-20', 'opacity-0');
+            }, 3500);
+        }
+
+        // Inicializimi në gjuhën Shqipe (SQ)
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        initProtectedContacts();
+        generateMathCaptcha();
+        setLanguage('sq');
+    </script>
+</body>
+</html>
